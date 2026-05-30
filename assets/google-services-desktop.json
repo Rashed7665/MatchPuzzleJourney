@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "189946930443",
+    "project_id": "candy-sort-puzzle-games",
+    "storage_bucket": "candy-sort-puzzle-games.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189946930443:android:cb8ec795efb8049fad6e0e",
+        "android_client_info": {
+          "package_name": "com.candymatch.puzzlegame.candyblast.game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAi6iJWNl08GBvrEpPTG80UwFWyXQ6XJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5021 @@
+GameMain Full Code : 
+
+"using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using DG.Tweening;
+using Il2CppDummyDll;
+using PathologicalGames;
+using UnityEngine;
+using UnityEngine.UI;
+
+// Token: 0x02000132 RID: 306
+[Token(Token = "0x2000132")]
+public class GameMain : MonoBehaviour
+{
+	// Token: 0x17000118 RID: 280
+	// (get) Token: 0x060007B9 RID: 1977 RVA: 0x00003B40 File Offset: 0x00001D40
+	// (set) Token: 0x060007BA RID: 1978 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x17000118")]
+	public int Score
+	{
+		[Token(Token = "0x60007B9")]
+		[Address(RVA = "0x1DC4A18", Offset = "0x1DC0A18", VA = "0x1DC4A18")]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x60007BA")]
+		[Address(RVA = "0x1DC4A20", Offset = "0x1DC0A20", VA = "0x1DC4A20")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x17000119 RID: 281
+	// (get) Token: 0x060007BB RID: 1979 RVA: 0x00003B58 File Offset: 0x00001D58
+	[Token(Token = "0x17000119")]
+	public VSTurn CurrentTurn
+	{
+		[Token(Token = "0x60007BB")]
+		[Address(RVA = "0x1DC4A9C", Offset = "0x1DC0A9C", VA = "0x1DC4A9C")]
+		get
+		{
+			return VSTurn.Player;
+		}
+	}
+
+	// Token: 0x1700011A RID: 282
+	// (get) Token: 0x060007BC RID: 1980 RVA: 0x00003B70 File Offset: 0x00001D70
+	// (set) Token: 0x060007BD RID: 1981 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x1700011A")]
+	public int MoveCount
+	{
+		[Token(Token = "0x60007BC")]
+		[Address(RVA = "0x1DC4AA4", Offset = "0x1DC0AA4", VA = "0x1DC4AA4")]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x60007BD")]
+		[Address(RVA = "0x1DBB58C", Offset = "0x1DB758C", VA = "0x1DBB58C")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x1700011B RID: 283
+	// (get) Token: 0x060007BE RID: 1982 RVA: 0x00003B88 File Offset: 0x00001D88
+	// (set) Token: 0x060007BF RID: 1983 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x1700011B")]
+	public int ComboCount
+	{
+		[Token(Token = "0x60007BE")]
+		[Address(RVA = "0x1DC4AAC", Offset = "0x1DC0AAC", VA = "0x1DC4AAC")]
+		[CompilerGenerated]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x60007BF")]
+		[Address(RVA = "0x1DC4AB4", Offset = "0x1DC0AB4", VA = "0x1DC4AB4")]
+		[CompilerGenerated]
+		private set
+		{
+		}
+	}
+
+	// Token: 0x060007C0 RID: 1984 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C0")]
+	[Address(RVA = "0x1DC4ABC", Offset = "0x1DC0ABC", VA = "0x1DC4ABC")]
+	public GameMain()
+	{
+	}
+
+	// Token: 0x060007C1 RID: 1985 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C1")]
+	[Address(RVA = "0x1DC4D20", Offset = "0x1DC0D20", VA = "0x1DC4D20")]
+	private void Awake()
+	{
+	}
+
+	// Token: 0x060007C2 RID: 1986 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C2")]
+	[Address(RVA = "0x1DC4E1C", Offset = "0x1DC0E1C", VA = "0x1DC4E1C")]
+	private void Update()
+	{
+	}
+
+	// Token: 0x060007C3 RID: 1987 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C3")]
+	[Address(RVA = "0x1DC4E20", Offset = "0x1DC0E20", VA = "0x1DC4E20")]
+	public void StartProto(MapData mapData)
+	{
+	}
+
+	// Token: 0x060007C4 RID: 1988 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007C4")]
+	[Address(RVA = "0x1DC5848", Offset = "0x1DC1848", VA = "0x1DC5848")]
+	private IEnumerator SoundConnectDelay(float delay)
+	{
+		return null;
+	}
+
+	// Token: 0x060007C5 RID: 1989 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C5")]
+	[Address(RVA = "0x1DC58C0", Offset = "0x1DC18C0", VA = "0x1DC58C0")]
+	public void SavePowerdata(string powerName)
+	{
+	}
+
+	// Token: 0x060007C6 RID: 1990 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C6")]
+	[Address(RVA = "0x1DC59B0", Offset = "0x1DC19B0", VA = "0x1DC59B0")]
+	private void PlayGameBGM()
+	{
+	}
+
+	// Token: 0x060007C7 RID: 1991 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C7")]
+	[Address(RVA = "0x1DC5A20", Offset = "0x1DC1A20", VA = "0x1DC5A20")]
+	public static void CompleteGameStart()
+	{
+	}
+
+	// Token: 0x060007C8 RID: 1992 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C8")]
+	[Address(RVA = "0x1DC5B2C", Offset = "0x1DC1B2C", VA = "0x1DC5B2C")]
+	private void OnMessageStartCompleted()
+	{
+	}
+
+	// Token: 0x060007C9 RID: 1993 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007C9")]
+	[Address(RVA = "0x1DC552C", Offset = "0x1DC152C", VA = "0x1DC552C")]
+	private void ProcessAfterOnMessageStartCompleted()
+	{
+	}
+
+	// Token: 0x060007CA RID: 1994 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007CA")]
+	[Address(RVA = "0x1DC5C14", Offset = "0x1DC1C14", VA = "0x1DC5C14")]
+	private void SkipTutorial()
+	{
+	}
+
+	// Token: 0x060007CB RID: 1995 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007CB")]
+	[Address(RVA = "0x1DC5C20", Offset = "0x1DC1C20", VA = "0x1DC5C20")]
+	public void StartProto(int level)
+	{
+	}
+
+	// Token: 0x060007CC RID: 1996 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007CC")]
+	[Address(RVA = "0x1DC5CA8", Offset = "0x1DC1CA8", VA = "0x1DC5CA8")]
+	public static void Reset()
+	{
+	}
+
+	// Token: 0x060007CD RID: 1997 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007CD")]
+	[Address(RVA = "0x1DC60DC", Offset = "0x1DC20DC", VA = "0x1DC60DC")]
+	public static void ResetBoard()
+	{
+	}
+
+	// Token: 0x060007CE RID: 1998 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007CE")]
+	[Address(RVA = "0x1DC6140", Offset = "0x1DC2140", VA = "0x1DC6140")]
+	public void OnPressButtonExit()
+	{
+	}
+
+	// Token: 0x060007CF RID: 1999 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007CF")]
+	[Address(RVA = "0x1DC6264", Offset = "0x1DC2264", VA = "0x1DC6264")]
+	private void OnEventExitYes()
+	{
+	}
+
+	// Token: 0x060007D0 RID: 2000 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D0")]
+	[Address(RVA = "0x1DC6384", Offset = "0x1DC2384", VA = "0x1DC6384")]
+	public void OnEventGameRetry()
+	{
+	}
+
+	// Token: 0x060007D1 RID: 2001 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D1")]
+	[Address(RVA = "0x1DC6314", Offset = "0x1DC2314", VA = "0x1DC6314")]
+	private void ProcessGameQuit(bool IsExitRetry)
+	{
+	}
+
+	// Token: 0x060007D2 RID: 2002 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D2")]
+	[Address(RVA = "0x1DC63F8", Offset = "0x1DC23F8", VA = "0x1DC63F8")]
+	private void ForceQuitProgress(bool IsExitRetry)
+	{
+	}
+
+	// Token: 0x060007D3 RID: 2003 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D3")]
+	[Address(RVA = "0x1DC6924", Offset = "0x1DC2924", VA = "0x1DC6924")]
+	private void WaitNetworkGameExitRetry()
+	{
+	}
+
+	// Token: 0x060007D4 RID: 2004 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D4")]
+	[Address(RVA = "0x1DC6970", Offset = "0x1DC2970", VA = "0x1DC6970")]
+	public void AddExtraMoves()
+	{
+	}
+
+	// Token: 0x060007D5 RID: 2005 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D5")]
+	[Address(RVA = "0x1DC6998", Offset = "0x1DC2998", VA = "0x1DC6998")]
+	public void IncreaseMoveCount(int count)
+	{
+	}
+
+	// Token: 0x060007D6 RID: 2006 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D6")]
+	[Address(RVA = "0x1DB5E3C", Offset = "0x1DB1E3C", VA = "0x1DB5E3C")]
+	public void TurnStart()
+	{
+	}
+
+	// Token: 0x060007D7 RID: 2007 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D7")]
+	[Address(RVA = "0x1DB6068", Offset = "0x1DB2068", VA = "0x1DB6068")]
+	public void TurnEnd(bool passToBossTurn = true)
+	{
+	}
+
+	// Token: 0x060007D8 RID: 2008 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007D8")]
+	[Address(RVA = "0x1DC6A1C", Offset = "0x1DC2A1C", VA = "0x1DC6A1C")]
+	public void TurnEndAfterUsingBooster()
+	{
+	}
+
+	// Token: 0x060007D9 RID: 2009 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007D9")]
+	[Address(RVA = "0x1DC6AA4", Offset = "0x1DC2AA4", VA = "0x1DC6AA4")]
+	private IEnumerator waitPlayResultAfterUsingBooster(bool firstMove = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060007DA RID: 2010 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007DA")]
+	[Address(RVA = "0x1DC69B4", Offset = "0x1DC29B4", VA = "0x1DC69B4")]
+	private IEnumerator waitPlayResult()
+	{
+		return null;
+	}
+
+	// Token: 0x060007DB RID: 2011 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007DB")]
+	[Address(RVA = "0x1DC6B20", Offset = "0x1DC2B20", VA = "0x1DC6B20")]
+	private IEnumerator waitConnectedSweetRoad()
+	{
+		return null;
+	}
+
+	// Token: 0x060007DC RID: 2012 RVA: 0x00003BA0 File Offset: 0x00001DA0
+	[Token(Token = "0x60007DC")]
+	[Address(RVA = "0x1DC6B88", Offset = "0x1DC2B88", VA = "0x1DC6B88")]
+	public bool CheckDiggingCondition()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060007DD RID: 2013 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007DD")]
+	[Address(RVA = "0x1DC5B9C", Offset = "0x1DC1B9C", VA = "0x1DC5B9C")]
+	private IEnumerator firstDyanmicBoard(float delayTime = 0f)
+	{
+		return null;
+	}
+
+	// Token: 0x060007DE RID: 2014 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007DE")]
+	[Address(RVA = "0x1DC6C90", Offset = "0x1DC2C90", VA = "0x1DC6C90")]
+	public IEnumerator playWithBuffItems(int buffID, int rewardCount)
+	{
+		return null;
+	}
+
+	// Token: 0x060007DF RID: 2015 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007DF")]
+	[Address(RVA = "0x1DC6D0C", Offset = "0x1DC2D0C", VA = "0x1DC6D0C")]
+	private IEnumerator waitDynamicBoardCommon(bool moveBoardForce = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060007E0 RID: 2016 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007E0")]
+	[Address(RVA = "0x1DC6D88", Offset = "0x1DC2D88", VA = "0x1DC6D88")]
+	private IEnumerator waitDynamicBoard(bool firstMove = false, float delayTime = 0f)
+	{
+		return null;
+	}
+
+	// Token: 0x060007E1 RID: 2017 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007E1")]
+	[Address(RVA = "0x1DC6E14", Offset = "0x1DC2E14", VA = "0x1DC6E14")]
+	public IEnumerator DoMatchEndProcess()
+	{
+		return null;
+	}
+
+	// Token: 0x060007E2 RID: 2018 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007E2")]
+	[Address(RVA = "0x1DC6E7C", Offset = "0x1DC2E7C", VA = "0x1DC6E7C")]
+	public void Continue()
+	{
+	}
+
+	// Token: 0x060007E3 RID: 2019 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007E3")]
+	[Address(RVA = "0x1DC6E90", Offset = "0x1DC2E90", VA = "0x1DC6E90")]
+	public void DecreaseCollectCandy(Vector3 startPos, int id)
+	{
+	}
+
+	// Token: 0x060007E4 RID: 2020 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007E4")]
+	[Address(RVA = "0x1DC6FCC", Offset = "0x1DC2FCC", VA = "0x1DC6FCC")]
+	public void DecreaseCollectMakeSpecialBlock(CollectBlockType collectBlockType, Vector3 startPos, int id)
+	{
+	}
+
+	// Token: 0x060007E5 RID: 2021 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007E5")]
+	[Address(RVA = "0x1DBD624", Offset = "0x1DB9624", VA = "0x1DBD624")]
+	public void DecreaseCollect(CollectBlockType collectBlockType, bool countPrevValue = false)
+	{
+	}
+
+	// Token: 0x060007E6 RID: 2022 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007E6")]
+	[Address(RVA = "0x1DBD31C", Offset = "0x1DB931C", VA = "0x1DBD31C")]
+	public void PrevThrowCollectItem(CollectBlockType collectBlockType)
+	{
+	}
+
+	// Token: 0x060007E7 RID: 2023 RVA: 0x00003BB8 File Offset: 0x00001DB8
+	[Token(Token = "0x60007E7")]
+	[Address(RVA = "0x1DBFA20", Offset = "0x1DBBA20", VA = "0x1DBFA20")]
+	public float CalculateThrowingTime(Vector3 startPos, Vector3 targetPos)
+	{
+		return 0f;
+	}
+
+	// Token: 0x060007E8 RID: 2024 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007E8")]
+	[Address(RVA = "0x1DB4618", Offset = "0x1DB0618", VA = "0x1DB4618")]
+	public void ThrowCollectItem(GameObject objThrowItem, CollectBlockType collectBlockType, float startDelay = 0f, [Optional] SpawnPool pool)
+	{
+	}
+
+	// Token: 0x060007E9 RID: 2025 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007E9")]
+	[Address(RVA = "0x1DC72A4", Offset = "0x1DC32A4", VA = "0x1DC72A4")]
+	private IEnumerator ResetThrowingTerm()
+	{
+		return null;
+	}
+
+	// Token: 0x060007EA RID: 2026 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007EA")]
+	[Address(RVA = "0x1DC71FC", Offset = "0x1DC31FC", VA = "0x1DC71FC")]
+	private IEnumerator WaitCompleteThrowCollectItem(float duration, GameObject destroyItem, CollectBlockType collectBlockType, SpawnPool pool, bool isCollectItem = true)
+	{
+		return null;
+	}
+
+	// Token: 0x060007EB RID: 2027 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007EB")]
+	[Address(RVA = "0x1DC730C", Offset = "0x1DC330C", VA = "0x1DC730C")]
+	private void RemoveThrowCollectItem(GameObject destroyItem, SpawnPool pool)
+	{
+	}
+
+	// Token: 0x060007EC RID: 2028 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007EC")]
+	[Address(RVA = "0x1DC53F0", Offset = "0x1DC13F0", VA = "0x1DC53F0")]
+	public void StartSession(GoalTarget sessionType, Limitation limitationType)
+	{
+	}
+
+	// Token: 0x060007ED RID: 2029 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007ED")]
+	[Address(RVA = "0x1DC7638", Offset = "0x1DC3638", VA = "0x1DC7638")]
+	private IEnumerator DoMoveCrow()
+	{
+		return null;
+	}
+
+	// Token: 0x060007EE RID: 2030 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007EE")]
+	[Address(RVA = "0x1DC76A0", Offset = "0x1DC36A0", VA = "0x1DC76A0")]
+	private IEnumerator DoMoveRailBoard()
+	{
+		return null;
+	}
+
+	// Token: 0x060007EF RID: 2031 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007EF")]
+	[Address(RVA = "0x1DC7708", Offset = "0x1DC3708", VA = "0x1DC7708")]
+	private IEnumerator DoMoveBoard(bool firstMove = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060007F0 RID: 2032 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F0")]
+	[Address(RVA = "0x1DC7784", Offset = "0x1DC3784", VA = "0x1DC7784")]
+	private List<GameMain.FromToCoordinate> GetMovingPathEachSlot(MapDataMovingSlot movingSlot)
+	{
+		return null;
+	}
+
+	// Token: 0x060007F1 RID: 2033 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F1")]
+	[Address(RVA = "0x1DC7994", Offset = "0x1DC3994", VA = "0x1DC7994")]
+	private IEnumerator DoScaleMovingBoard(MapDataMovingSlot movingSlot)
+	{
+		return null;
+	}
+
+	// Token: 0x060007F2 RID: 2034 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F2")]
+	[Address(RVA = "0x1DC7A08", Offset = "0x1DC3A08", VA = "0x1DC7A08")]
+	private IEnumerator DoRotationBoard(bool firstMove = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060007F3 RID: 2035 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F3")]
+	[Address(RVA = "0x1DC7A84", Offset = "0x1DC3A84", VA = "0x1DC7A84")]
+	private IEnumerator DoScaleRotationBoard(MapDataRotationSlot rotationSlot)
+	{
+		return null;
+	}
+
+	// Token: 0x060007F4 RID: 2036 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F4")]
+	[Address(RVA = "0x1DC7AEC", Offset = "0x1DC3AEC", VA = "0x1DC7AEC")]
+	public IEnumerator DoBombCandyFactory()
+	{
+		return null;
+	}
+
+	// Token: 0x060007F5 RID: 2037 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F5")]
+	[Address(RVA = "0x1DC7B54", Offset = "0x1DC3B54", VA = "0x1DC7B54")]
+	private IEnumerator DoShotPastryBag()
+	{
+		return null;
+	}
+
+	// Token: 0x060007F6 RID: 2038 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F6")]
+	[Address(RVA = "0x1DC7BBC", Offset = "0x1DC3BBC", VA = "0x1DC7BBC")]
+	private IEnumerator DoBreedingSlime()
+	{
+		return null;
+	}
+
+	// Token: 0x060007F7 RID: 2039 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F7")]
+	[Address(RVA = "0x1DC7C24", Offset = "0x1DC3C24", VA = "0x1DC7C24")]
+	private IEnumerator DoRotationBoardEachBoard(MapDataRotationSlot rotationSlot, bool firstMove = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060007F8 RID: 2040 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007F8")]
+	[Address(RVA = "0x1DC7CA8", Offset = "0x1DC3CA8", VA = "0x1DC7CA8")]
+	private IEnumerator DoChameleonChangeColor()
+	{
+		return null;
+	}
+
+	// Token: 0x060007F9 RID: 2041 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007F9")]
+	[Address(RVA = "0x1DC7D10", Offset = "0x1DC3D10", VA = "0x1DC7D10")]
+	public void ActiveNumberChocolate(int inOrder)
+	{
+	}
+
+	// Token: 0x060007FA RID: 2042 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007FA")]
+	[Address(RVA = "0x1DC7EBC", Offset = "0x1DC3EBC", VA = "0x1DC7EBC")]
+	private IEnumerator ShowChangeTurnUI(VSTurn newTurnPlayer)
+	{
+		return null;
+	}
+
+	// Token: 0x060007FB RID: 2043 RVA: 0x00003BD0 File Offset: 0x00001DD0
+	[Token(Token = "0x60007FB")]
+	[Address(RVA = "0x1DB5D58", Offset = "0x1DB1D58", VA = "0x1DB5D58")]
+	public bool IsGameSuccess(bool isPreValueCheck = false)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060007FC RID: 2044 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007FC")]
+	[Address(RVA = "0x1DC7498", Offset = "0x1DC3498", VA = "0x1DC7498")]
+	private IEnumerator GamePlaySession()
+	{
+		return null;
+	}
+
+	// Token: 0x060007FD RID: 2045 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60007FD")]
+	[Address(RVA = "0x1DC7F24", Offset = "0x1DC3F24", VA = "0x1DC7F24")]
+	public void DoGameContinue()
+	{
+	}
+
+	// Token: 0x060007FE RID: 2046 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007FE")]
+	[Address(RVA = "0x1DC75D0", Offset = "0x1DC35D0", VA = "0x1DC75D0")]
+	private IEnumerator<float> FindingSolutionsRoutine()
+	{
+		return null;
+	}
+
+	// Token: 0x060007FF RID: 2047 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60007FF")]
+	[Address(RVA = "0x1DC7500", Offset = "0x1DC3500", VA = "0x1DC7500")]
+	private IEnumerator SweetRoadRoutine()
+	{
+		return null;
+	}
+
+	// Token: 0x06000800 RID: 2048 RVA: 0x00003BE8 File Offset: 0x00001DE8
+	[Token(Token = "0x6000800")]
+	[Address(RVA = "0x1DC7F48", Offset = "0x1DC3F48", VA = "0x1DC7F48")]
+	private bool CheckRemainSlotHaveToFillMilk()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000801 RID: 2049 RVA: 0x00003C00 File Offset: 0x00001E00
+	[Token(Token = "0x6000801")]
+	[Address(RVA = "0x1DC8524", Offset = "0x1DC4524", VA = "0x1DC8524")]
+	private bool CheckSweetRoad(int x, int y)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000802 RID: 2050 RVA: 0x00003C18 File Offset: 0x00001E18
+	[Token(Token = "0x6000802")]
+	[Address(RVA = "0x1DC8BD0", Offset = "0x1DC4BD0", VA = "0x1DC8BD0")]
+	private bool RemainCheckSweetRoad()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000803 RID: 2051 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000803")]
+	[Address(RVA = "0x1DC8D3C", Offset = "0x1DC4D3C", VA = "0x1DC8D3C")]
+	public void CheckRescueGingerMan(int x, int y)
+	{
+	}
+
+	// Token: 0x06000804 RID: 2052 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000804")]
+	[Address(RVA = "0x1DC921C", Offset = "0x1DC521C", VA = "0x1DC921C")]
+	private IEnumerator AnimateRescueGingerManObject(GameObject objBear, RescueGingerManSize size)
+	{
+		return null;
+	}
+
+	// Token: 0x06000805 RID: 2053 RVA: 0x00003C30 File Offset: 0x00001E30
+	[Token(Token = "0x6000805")]
+	[Address(RVA = "0x1DC9298", Offset = "0x1DC5298", VA = "0x1DC9298")]
+	private bool LayerExists(string layerName)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000806 RID: 2054 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000806")]
+	[Address(RVA = "0x1DC92B8", Offset = "0x1DC52B8", VA = "0x1DC92B8")]
+	private List<Chip> FindPowerups()
+	{
+		return null;
+	}
+
+	// Token: 0x06000807 RID: 2055 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000807")]
+	[Address(RVA = "0x1DC6788", Offset = "0x1DC2788", VA = "0x1DC6788")]
+	private void BackToMapTool()
+	{
+	}
+
+	// Token: 0x06000808 RID: 2056 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000808")]
+	[Address(RVA = "0x1DC951C", Offset = "0x1DC551C", VA = "0x1DC951C")]
+	public void ResultGameWin()
+	{
+	}
+
+	// Token: 0x06000809 RID: 2057 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000809")]
+	[Address(RVA = "0x1DC9AA8", Offset = "0x1DC5AA8", VA = "0x1DC9AA8")]
+	public void ResultGameLose(GameFailResultReason reason)
+	{
+	}
+
+	// Token: 0x0600080A RID: 2058 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600080A")]
+	[Address(RVA = "0x1DC9D94", Offset = "0x1DC5D94", VA = "0x1DC9D94")]
+	private void DoGameResultProcess(bool isSuccess, GameFailResultReason reason)
+	{
+	}
+
+	// Token: 0x0600080B RID: 2059 RVA: 0x00003C48 File Offset: 0x00001E48
+	[Token(Token = "0x600080B")]
+	[Address(RVA = "0x1DCA1B8", Offset = "0x1DC61B8", VA = "0x1DCA1B8")]
+	public int GetDailyBonusLevelRewardTreasureCount()
+	{
+		return 0;
+	}
+
+	// Token: 0x0600080C RID: 2060 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600080C")]
+	[Address(RVA = "0x1DC9ED0", Offset = "0x1DC5ED0", VA = "0x1DC9ED0")]
+	private void OpenClearPopup()
+	{
+	}
+
+	// Token: 0x0600080D RID: 2061 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600080D")]
+	[Address(RVA = "0x1DCA104", Offset = "0x1DC6104", VA = "0x1DCA104")]
+	private void ProcessGameLose()
+	{
+	}
+
+	// Token: 0x0600080E RID: 2062 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600080E")]
+	[Address(RVA = "0x1DCA2D8", Offset = "0x1DC62D8", VA = "0x1DCA2D8")]
+	private void OpenFailPopup()
+	{
+	}
+
+	// Token: 0x0600080F RID: 2063 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600080F")]
+	[Address(RVA = "0x1DCA3A8", Offset = "0x1DC63A8", VA = "0x1DCA3A8")]
+	private void DoStartSweetFestival()
+	{
+	}
+
+	// Token: 0x06000810 RID: 2064 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000810")]
+	[Address(RVA = "0x1DCA424", Offset = "0x1DC6424", VA = "0x1DCA424")]
+	private IEnumerator ProcessSweetFestival()
+	{
+		return null;
+	}
+
+	// Token: 0x06000811 RID: 2065 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000811")]
+	[Address(RVA = "0x1DBB040", Offset = "0x1DB7040", VA = "0x1DBB040")]
+	public void SkipGameEndBonus()
+	{
+	}
+
+	// Token: 0x06000812 RID: 2066 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000812")]
+	[Address(RVA = "0x1DC97A4", Offset = "0x1DC57A4", VA = "0x1DC97A4")]
+	private void PopupOpenWin()
+	{
+	}
+
+	// Token: 0x06000813 RID: 2067 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000813")]
+	[Address(RVA = "0x1DC9C90", Offset = "0x1DC5C90", VA = "0x1DC9C90")]
+	private void PopupFiveMoveMore(GameFailResultReason reason)
+	{
+	}
+
+	// Token: 0x06000814 RID: 2068 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000814")]
+	[Address(RVA = "0x1DCA4FC", Offset = "0x1DC64FC", VA = "0x1DCA4FC")]
+	private void AppEventGameFail()
+	{
+	}
+
+	// Token: 0x06000815 RID: 2069 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000815")]
+	[Address(RVA = "0x1DCA804", Offset = "0x1DC6804", VA = "0x1DCA804")]
+	private void PopupOpenLose()
+	{
+	}
+
+	// Token: 0x06000816 RID: 2070 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000816")]
+	[Address(RVA = "0x1DCA86C", Offset = "0x1DC686C", VA = "0x1DCA86C")]
+	private void OnEventWinPopupNext()
+	{
+	}
+
+	// Token: 0x06000817 RID: 2071 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000817")]
+	[Address(RVA = "0x1DCAC10", Offset = "0x1DC6C10", VA = "0x1DCAC10")]
+	private void OnEventWinPopupClose()
+	{
+	}
+
+	// Token: 0x06000818 RID: 2072 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000818")]
+	[Address(RVA = "0x1DC6818", Offset = "0x1DC2818", VA = "0x1DC6818")]
+	public void GotoGameToLobby(bool isWin)
+	{
+	}
+
+	// Token: 0x1700011C RID: 284
+	// (get) Token: 0x06000819 RID: 2073 RVA: 0x00003C60 File Offset: 0x00001E60
+	// (set) Token: 0x0600081A RID: 2074 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x1700011C")]
+	private int staterpackIndex
+	{
+		[Token(Token = "0x6000819")]
+		[Address(RVA = "0x1DCACB4", Offset = "0x1DC6CB4", VA = "0x1DCACB4")]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x600081A")]
+		[Address(RVA = "0x1DCACF8", Offset = "0x1DC6CF8", VA = "0x1DCACF8")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x0600081B RID: 2075 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600081B")]
+	[Address(RVA = "0x1DCAD44", Offset = "0x1DC6D44", VA = "0x1DCAD44")]
+	public void ShowStartPack()
+	{
+	}
+
+	// Token: 0x0600081C RID: 2076 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600081C")]
+	[Address(RVA = "0x1DCAE2C", Offset = "0x1DC6E2C", VA = "0x1DCAE2C")]
+	private void OnEventLosePopupClose()
+	{
+	}
+
+	// Token: 0x0600081D RID: 2077 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600081D")]
+	[Address(RVA = "0x1DCAED0", Offset = "0x1DC6ED0", VA = "0x1DCAED0")]
+	private void OnEventBonusLevelClearPopupOK()
+	{
+	}
+
+	// Token: 0x0600081E RID: 2078 RVA: 0x00003C78 File Offset: 0x00001E78
+	[Token(Token = "0x600081E")]
+	[Address(RVA = "0x1DB7224", Offset = "0x1DB3224", VA = "0x1DB7224")]
+	public bool CanIAnimate()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x0600081F RID: 2079 RVA: 0x00003C90 File Offset: 0x00001E90
+	[Token(Token = "0x600081F")]
+	[Address(RVA = "0x1DB5E14", Offset = "0x1DB1E14", VA = "0x1DB5E14")]
+	public bool CanIMatch()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000820 RID: 2080 RVA: 0x00003CA8 File Offset: 0x00001EA8
+	[Token(Token = "0x6000820")]
+	[Address(RVA = "0x1DCAED8", Offset = "0x1DC6ED8", VA = "0x1DCAED8")]
+	public bool CanINextTurn()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000821 RID: 2081 RVA: 0x00003CC0 File Offset: 0x00001EC0
+	[Token(Token = "0x6000821")]
+	[Address(RVA = "0x1DCAF10", Offset = "0x1DC6F10", VA = "0x1DCAF10")]
+	public bool CanIShuffle()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000822 RID: 2082 RVA: 0x00003CD8 File Offset: 0x00001ED8
+	[Token(Token = "0x6000822")]
+	[Address(RVA = "0x1DCAF60", Offset = "0x1DC6F60", VA = "0x1DCAF60")]
+	public bool CanIGravity()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000823 RID: 2083 RVA: 0x00003CF0 File Offset: 0x00001EF0
+	[Token(Token = "0x6000823")]
+	[Address(RVA = "0x1DB52B8", Offset = "0x1DB12B8", VA = "0x1DB52B8")]
+	public bool CanIWait()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000824 RID: 2084 RVA: 0x00003D08 File Offset: 0x00001F08
+	[Token(Token = "0x6000824")]
+	[Address(RVA = "0x1DCAF8C", Offset = "0x1DC6F8C", VA = "0x1DCAF8C")]
+	public bool IsCompletedThrowCollectItem()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000825 RID: 2085 RVA: 0x00003D20 File Offset: 0x00001F20
+	[Token(Token = "0x6000825")]
+	[Address(RVA = "0x1DCAF9C", Offset = "0x1DC6F9C", VA = "0x1DCAF9C")]
+	public bool CanMoveBoard()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000826 RID: 2086 RVA: 0x00003D38 File Offset: 0x00001F38
+	[Token(Token = "0x6000826")]
+	[Address(RVA = "0x1DCAFAC", Offset = "0x1DC6FAC", VA = "0x1DCAFAC")]
+	public bool CanISpewCandyFactory()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000827 RID: 2087 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000827")]
+	[Address(RVA = "0x1DCAFBC", Offset = "0x1DC6FBC", VA = "0x1DCAFBC")]
+	private void AddSolution(GameMain.Solution s)
+	{
+	}
+
+	// Token: 0x06000828 RID: 2088 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000828")]
+	[Address(RVA = "0x1DCB060", Offset = "0x1DC7060", VA = "0x1DCB060")]
+	public void EventCounter()
+	{
+	}
+
+	// Token: 0x1700011D RID: 285
+	// (get) Token: 0x06000829 RID: 2089 RVA: 0x00003D50 File Offset: 0x00001F50
+	// (set) Token: 0x0600082A RID: 2090 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x1700011D")]
+	public int TotalRevives
+	{
+		[Token(Token = "0x6000829")]
+		[Address(RVA = "0x1DCB070", Offset = "0x1DC7070", VA = "0x1DCB070")]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x600082A")]
+		[Address(RVA = "0x1DCB0B4", Offset = "0x1DC70B4", VA = "0x1DCB0B4")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x1700011E RID: 286
+	// (get) Token: 0x0600082B RID: 2091 RVA: 0x00003D68 File Offset: 0x00001F68
+	// (set) Token: 0x0600082C RID: 2092 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x1700011E")]
+	public int Failed
+	{
+		[Token(Token = "0x600082B")]
+		[Address(RVA = "0x1DCB100", Offset = "0x1DC7100", VA = "0x1DCB100")]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x600082C")]
+		[Address(RVA = "0x1DCB144", Offset = "0x1DC7144", VA = "0x1DCB144")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x0600082D RID: 2093 RVA: 0x00003D80 File Offset: 0x00001F80
+	[Token(Token = "0x600082D")]
+	[Address(RVA = "0x1DCB190", Offset = "0x1DC7190", VA = "0x1DCB190")]
+	private bool IsCanMixMoves()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x0600082E RID: 2094 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x600082E")]
+	[Address(RVA = "0x1DCBB14", Offset = "0x1DC7B14", VA = "0x1DCBB14")]
+	private List<GameMain.Move> FindMoves(bool cpuAI = false)
+	{
+		return null;
+	}
+
+	// Token: 0x0600082F RID: 2095 RVA: 0x00003D98 File Offset: 0x00001F98
+	[Token(Token = "0x600082F")]
+	[Address(RVA = "0x1DCCB18", Offset = "0x1DC8B18", VA = "0x1DCCB18")]
+	private bool IsExistCandyChipOrRainbowChip()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000830 RID: 2096 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000830")]
+	[Address(RVA = "0x1DCC9D0", Offset = "0x1DC89D0", VA = "0x1DCC9D0")]
+	private void AnalizSwap(GameMain.Move move)
+	{
+	}
+
+	// Token: 0x06000831 RID: 2097 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000831")]
+	[Address(RVA = "0x1DCCD6C", Offset = "0x1DC8D6C", VA = "0x1DCCD6C")]
+	private void MatchSolution(GameMain.Solution solution)
+	{
+	}
+
+	// Token: 0x06000832 RID: 2098 RVA: 0x00003DB0 File Offset: 0x00001FB0
+	[Token(Token = "0x6000832")]
+	[Address(RVA = "0x1DCEC04", Offset = "0x1DCAC04", VA = "0x1DCEC04")]
+	public int GetMovementID()
+	{
+		return 0;
+	}
+
+	// Token: 0x06000833 RID: 2099 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000833")]
+	[Address(RVA = "0x1DCEC18", Offset = "0x1DCAC18", VA = "0x1DCEC18")]
+	public IEnumerator ShuffleBooster()
+	{
+		return null;
+	}
+
+	// Token: 0x06000834 RID: 2100 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000834")]
+	[Address(RVA = "0x1DCEC80", Offset = "0x1DCAC80", VA = "0x1DCEC80")]
+	public IEnumerator Shuffle(bool f)
+	{
+		return null;
+	}
+
+	// Token: 0x06000835 RID: 2101 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000835")]
+	[Address(RVA = "0x1DCECFC", Offset = "0x1DCACFC", VA = "0x1DCECFC")]
+	private List<GameMain.Solution> FindSolutions()
+	{
+		return null;
+	}
+
+	// Token: 0x06000836 RID: 2102 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000836")]
+	[Address(RVA = "0x1DC7568", Offset = "0x1DC3568", VA = "0x1DC7568")]
+	private IEnumerator ShowingHintRoutine()
+	{
+		return null;
+	}
+
+	// Token: 0x06000837 RID: 2103 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000837")]
+	[Address(RVA = "0x1DC69AC", Offset = "0x1DC29AC", VA = "0x1DC69AC")]
+	public void SetBestMovesNull()
+	{
+	}
+
+	// Token: 0x06000838 RID: 2104 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000838")]
+	[Address(RVA = "0x1DCEF5C", Offset = "0x1DCAF5C", VA = "0x1DCEF5C")]
+	private void ShowHint()
+	{
+	}
+
+	// Token: 0x06000839 RID: 2105 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000839")]
+	[Address(RVA = "0x1DCFD60", Offset = "0x1DCBD60", VA = "0x1DCFD60")]
+	private void ShowHintLookAtMeEffect(int x, int y)
+	{
+	}
+
+	// Token: 0x0600083A RID: 2106 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600083A")]
+	[Address(RVA = "0x1DCFEF0", Offset = "0x1DCBEF0", VA = "0x1DCFEF0")]
+	private void ShowHintFlashingEffect(int x, int y)
+	{
+	}
+
+	// Token: 0x0600083B RID: 2107 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600083B")]
+	[Address(RVA = "0x1DD0080", Offset = "0x1DCC080", VA = "0x1DD0080")]
+	private void ShowHintCloseToYouEffect(int x, int y, Vector3 dir)
+	{
+	}
+
+	// Token: 0x0600083C RID: 2108 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600083C")]
+	[Address(RVA = "0x1DC69A4", Offset = "0x1DC29A4", VA = "0x1DC69A4")]
+	public void StartCombo()
+	{
+	}
+
+	// Token: 0x0600083D RID: 2109 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600083D")]
+	[Address(RVA = "0x1DCEB8C", Offset = "0x1DCAB8C", VA = "0x1DCEB8C")]
+	public void IncCombo()
+	{
+	}
+
+	// Token: 0x0600083E RID: 2110 RVA: 0x00003DC8 File Offset: 0x00001FC8
+	[Token(Token = "0x600083E")]
+	[Address(RVA = "0x1DCA48C", Offset = "0x1DC648C", VA = "0x1DCA48C")]
+	public PopupType GetGameOverPoupupType()
+	{
+		return PopupType.PopupCommonYesNo;
+	}
+
+	// Token: 0x0600083F RID: 2111 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x600083F")]
+	[Address(RVA = "0x1DD0240", Offset = "0x1DCC240", VA = "0x1DD0240")]
+	public IEnumerator ShowTextEffect(SpawnStringEffectType effectTextType)
+	{
+		return null;
+	}
+
+	// Token: 0x04000786 RID: 1926
+	[Token(Token = "0x4000786")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x0")]
+	public static GameMain main;
+
+	// Token: 0x04000787 RID: 1927
+	[Token(Token = "0x4000787")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x20")]
+	private readonly List<GameMain.Solution> solutions;
+
+	// Token: 0x04000788 RID: 1928
+	[Token(Token = "0x4000788")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x28")]
+	public Camera UIGameCamera;
+
+	// Token: 0x04000789 RID: 1929
+	[Token(Token = "0x4000789")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x30")]
+	public Camera GameEffectCamera;
+
+	// Token: 0x0400078A RID: 1930
+	[Token(Token = "0x400078A")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x38")]
+	public Image UIGameBG;
+
+	// Token: 0x0400078B RID: 1931
+	[Token(Token = "0x400078B")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x8")]
+	public static readonly float BounceTweenTime;
+
+	// Token: 0x0400078C RID: 1932
+	[Token(Token = "0x400078C")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xC")]
+	public static readonly float BlockDropDelayTime;
+
+	// Token: 0x0400078D RID: 1933
+	[Token(Token = "0x400078D")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x10")]
+	private static int DefaultSortingLayerID;
+
+	// Token: 0x0400078E RID: 1934
+	[Token(Token = "0x400078E")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x14")]
+	private static int GameEffectSortingLayerID;
+
+	// Token: 0x0400078F RID: 1935
+	[Token(Token = "0x400078F")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x18")]
+	public static bool rewardMove3ByADStart;
+
+	// Token: 0x04000790 RID: 1936
+	[Token(Token = "0x4000790")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x40")]
+	public Sprite SpriteFilledMilk;
+
+	// Token: 0x04000791 RID: 1937
+	[Token(Token = "0x4000791")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x48")]
+	[HideInInspector]
+	public bool doingStartCameraTween;
+
+	// Token: 0x04000792 RID: 1938
+	[Token(Token = "0x4000792")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x4C")]
+	[HideInInspector]
+	public int animate;
+
+	// Token: 0x04000793 RID: 1939
+	[Token(Token = "0x4000793")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x50")]
+	[HideInInspector]
+	public int matching;
+
+	// Token: 0x04000794 RID: 1940
+	[Token(Token = "0x4000794")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x54")]
+	[HideInInspector]
+	public int rolling;
+
+	// Token: 0x04000795 RID: 1941
+	[Token(Token = "0x4000795")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x58")]
+	[HideInInspector]
+	public int gravity;
+
+	// Token: 0x04000796 RID: 1942
+	[Token(Token = "0x4000796")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x5C")]
+	[HideInInspector]
+	public int lastMovementId;
+
+	// Token: 0x04000797 RID: 1943
+	[Token(Token = "0x4000797")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x60")]
+	[HideInInspector]
+	public int swapEvent;
+
+	// Token: 0x04000798 RID: 1944
+	[Token(Token = "0x4000798")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x64")]
+	[HideInInspector]
+	public float timeLeft;
+
+	// Token: 0x04000799 RID: 1945
+	[Token(Token = "0x4000799")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x68")]
+	[HideInInspector]
+	public int eventCount;
+
+	// Token: 0x0400079A RID: 1946
+	[Token(Token = "0x400079A")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x6C")]
+	[HideInInspector]
+	public bool IsMovingNextMap;
+
+	// Token: 0x0400079B RID: 1947
+	[Token(Token = "0x400079B")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x6D")]
+	[HideInInspector]
+	public bool isPlaying;
+
+	// Token: 0x0400079C RID: 1948
+	[Token(Token = "0x400079C")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x6E")]
+	[HideInInspector]
+	public bool isBonusTime;
+
+	// Token: 0x0400079D RID: 1949
+	[Token(Token = "0x400079D")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x6F")]
+	[HideInInspector]
+	public bool isGameResult;
+
+	// Token: 0x0400079E RID: 1950
+	[Token(Token = "0x400079E")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x70")]
+	[HideInInspector]
+	public bool isLockDrop;
+
+	// Token: 0x0400079F RID: 1951
+	[Token(Token = "0x400079F")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x71")]
+	[HideInInspector]
+	public bool reachedTheTarget;
+
+	// Token: 0x040007A0 RID: 1952
+	[Token(Token = "0x40007A0")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x72")]
+	[HideInInspector]
+	public bool firstChipGeneration;
+
+	// Token: 0x040007A1 RID: 1953
+	[Token(Token = "0x40007A1")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x73")]
+	[HideInInspector]
+	public bool isTurnResultEnd;
+
+	// Token: 0x040007A2 RID: 1954
+	[Token(Token = "0x40007A2")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x74")]
+	[HideInInspector]
+	public bool isJustGenerateChip;
+
+	// Token: 0x040007A3 RID: 1955
+	[Token(Token = "0x40007A3")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x78")]
+	[HideInInspector]
+	public int fillingMilkEffectCount;
+
+	// Token: 0x040007A4 RID: 1956
+	[Token(Token = "0x40007A4")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x7C")]
+	[HideInInspector]
+	public int throwingMoveEffectCount;
+
+	// Token: 0x040007A5 RID: 1957
+	[Token(Token = "0x40007A5")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x80")]
+	[HideInInspector]
+	public bool isFirstBoardSetting;
+
+	// Token: 0x040007A6 RID: 1958
+	[Token(Token = "0x40007A6")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x84")]
+	public int targetBringDownCount;
+
+	// Token: 0x040007A7 RID: 1959
+	[Token(Token = "0x40007A7")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x88")]
+	public int createdBringDownCount;
+
+	// Token: 0x040007A8 RID: 1960
+	[Token(Token = "0x40007A8")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x8C")]
+	public int targetBringDownRemainCount;
+
+	// Token: 0x040007A9 RID: 1961
+	[Token(Token = "0x40007A9")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x90")]
+	private bool isCollectMode;
+
+	// Token: 0x040007AA RID: 1962
+	[Token(Token = "0x40007AA")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x91")]
+	private bool waitContinue;
+
+	// Token: 0x040007AB RID: 1963
+	[Token(Token = "0x40007AB")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x98")]
+	[NonSerialized]
+	public int[] countOfEachTargetCount;
+
+	// Token: 0x040007AC RID: 1964
+	[Token(Token = "0x40007AC")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xA0")]
+	private readonly int[] countOfEachTargetCountPreValue;
+
+	// Token: 0x040007AD RID: 1965
+	[Token(Token = "0x40007AD")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xA8")]
+	[HideInInspector]
+	public bool IsUseBooster;
+
+	// Token: 0x040007AE RID: 1966
+	[Token(Token = "0x40007AE")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xB0")]
+	[HideInInspector]
+	public int[] UsedBoosterCountForSync;
+
+	// Token: 0x040007AF RID: 1967
+	[Token(Token = "0x40007AF")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xB8")]
+	[HideInInspector]
+	public int[] UsedBoosterCount;
+
+	// Token: 0x040007B0 RID: 1968
+	[Token(Token = "0x40007B0")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xC0")]
+	private int remainMoveCount;
+
+	// Token: 0x040007B1 RID: 1969
+	[Token(Token = "0x40007B1")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xC4")]
+	private GameFailResultReason failReason;
+
+	// Token: 0x040007B2 RID: 1970
+	[Token(Token = "0x40007B2")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xC8")]
+	public int ObsPauseTurnCount;
+
+	// Token: 0x040007B3 RID: 1971
+	[Token(Token = "0x40007B3")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xD0")]
+	public GameObject PrefabTutorialOutlineEffect;
+
+	// Token: 0x040007B4 RID: 1972
+	[Token(Token = "0x40007B4")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xD8")]
+	public GameObject PrefabTutorialGuideCursor;
+
+	// Token: 0x040007B5 RID: 1973
+	[Token(Token = "0x40007B5")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xE0")]
+	private int shuffleOccurredCount;
+
+	// Token: 0x040007B6 RID: 1974
+	[Token(Token = "0x40007B6")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xE4")]
+	public int targetOreoMilkHeight;
+
+	// Token: 0x040007B7 RID: 1975
+	[Token(Token = "0x40007B7")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xE8")]
+	public int curOreoMilkHeight;
+
+	// Token: 0x040007B8 RID: 1976
+	[Token(Token = "0x40007B8")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xEC")]
+	public bool canMakeOreoCracker;
+
+	// Token: 0x040007B9 RID: 1977
+	[Token(Token = "0x40007B9")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xED")]
+	public bool IsGettingItem;
+
+	// Token: 0x040007BA RID: 1978
+	[Token(Token = "0x40007BA")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xF0")]
+	public int CreatedTokenCount;
+
+	// Token: 0x040007BB RID: 1979
+	[Token(Token = "0x40007BB")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xF4")]
+	public bool outOfGame;
+
+	// Token: 0x040007BC RID: 1980
+	[Token(Token = "0x40007BC")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xF8")]
+	private int score;
+
+	// Token: 0x040007BD RID: 1981
+	[Token(Token = "0x40007BD")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0xFC")]
+	public int StarPoint;
+
+	// Token: 0x040007BE RID: 1982
+	[Token(Token = "0x40007BE")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x100")]
+	public bool PauseControl;
+
+	// Token: 0x040007BF RID: 1983
+	[Token(Token = "0x40007BF")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x104")]
+	private VSTurn currentTurn;
+
+	// Token: 0x040007C0 RID: 1984
+	[Token(Token = "0x40007C0")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x108")]
+	private bool dirtyChangeTurn;
+
+	// Token: 0x040007C1 RID: 1985
+	[Token(Token = "0x40007C1")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x10C")]
+	private int moveCount;
+
+	// Token: 0x040007C2 RID: 1986
+	[Token(Token = "0x40007C2")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x110")]
+	private bool isRecvLevelFailBonus;
+
+	// Token: 0x040007C3 RID: 1987
+	[Token(Token = "0x40007C3")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x114")]
+	public float TestValueRadius;
+
+	// Token: 0x040007C4 RID: 1988
+	[Token(Token = "0x40007C4")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x118")]
+	public float TestValueForce;
+
+	// Token: 0x040007C5 RID: 1989
+	[Token(Token = "0x40007C5")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x11C")]
+	private bool isStarting;
+
+	// Token: 0x040007C6 RID: 1990
+	[Token(Token = "0x40007C6")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x120")]
+	public float movingSlotTime;
+
+	// Token: 0x040007C7 RID: 1991
+	[Token(Token = "0x40007C7")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x124")]
+	public Ease movingSlotEase;
+
+	// Token: 0x040007C8 RID: 1992
+	[Token(Token = "0x40007C8")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x19")]
+	public static bool onFirstAction;
+
+	// Token: 0x040007C9 RID: 1993
+	[Token(Token = "0x40007C9")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x1C")]
+	public static float throwFlyingTime;
+
+	// Token: 0x040007CA RID: 1994
+	[Token(Token = "0x40007CA")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x128")]
+	private int throwingCollectItemCount;
+
+	// Token: 0x040007CB RID: 1995
+	[Token(Token = "0x40007CB")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x12C")]
+	private int throwingIntervalCount;
+
+	// Token: 0x040007CC RID: 1996
+	[Token(Token = "0x40007CC")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x130")]
+	private readonly float throwingIntervalTime;
+
+	// Token: 0x040007CD RID: 1997
+	[Token(Token = "0x40007CD")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x20")]
+	[HideInInspector]
+	public static float CrowMovingTime;
+
+	// Token: 0x040007CE RID: 1998
+	[Token(Token = "0x40007CE")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x134")]
+	public int magicalCrowHitCount;
+
+	// Token: 0x040007CF RID: 1999
+	[Token(Token = "0x40007CF")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x138")]
+	private readonly float MoveRailAnimationDuration;
+
+	// Token: 0x040007D0 RID: 2000
+	[Token(Token = "0x40007D0")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x24")]
+	public static float waitingTimeMovingBoardByOne;
+
+	// Token: 0x040007D1 RID: 2001
+	[Token(Token = "0x40007D1")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x13C")]
+	private float waitingTimeOfMoveBoard;
+
+	// Token: 0x040007D2 RID: 2002
+	[Token(Token = "0x40007D2")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x140")]
+	private readonly Dictionary<BoardPosition, BoardPosition> moveGeneratorPosition;
+
+	// Token: 0x040007D3 RID: 2003
+	[Token(Token = "0x40007D3")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x148")]
+	private readonly float RoationBoardAnimationDuration;
+
+	// Token: 0x040007D4 RID: 2004
+	[Token(Token = "0x40007D4")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x14C")]
+	[HideInInspector]
+	public bool canBombCandyFactory;
+
+	// Token: 0x040007D5 RID: 2005
+	[Token(Token = "0x40007D5")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x14D")]
+	[HideInInspector]
+	public bool completeBombCandyFactory;
+
+	// Token: 0x040007D6 RID: 2006
+	[Token(Token = "0x40007D6")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x14E")]
+	[HideInInspector]
+	public bool canMakeChocolateJail;
+
+	// Token: 0x040007D7 RID: 2007
+	[Token(Token = "0x40007D7")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x150")]
+	public int chameleonColorChanged;
+
+	// Token: 0x040007D8 RID: 2008
+	[Token(Token = "0x40007D8")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x154")]
+	private readonly Vector3 CPUCursorOffset;
+
+	// Token: 0x040007D9 RID: 2009
+	[Token(Token = "0x40007D9")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x160")]
+	public int shuffleOrder;
+
+	// Token: 0x040007DA RID: 2010
+	[Token(Token = "0x40007DA")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x168")]
+	private readonly bool[] isChecked;
+
+	// Token: 0x040007DB RID: 2011
+	[Token(Token = "0x40007DB")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x170")]
+	public bool isConnectedSweetRoad;
+
+	// Token: 0x040007DC RID: 2012
+	[Token(Token = "0x40007DC")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x171")]
+	public bool isConnectedOnlySweetRoad;
+
+	// Token: 0x040007DD RID: 2013
+	[Token(Token = "0x40007DD")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x178")]
+	private AudioSource endSound;
+
+	// Token: 0x040007DE RID: 2014
+	[Token(Token = "0x40007DE")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x180")]
+	public int SpewingCandyFactoryCount;
+
+	// Token: 0x040007DF RID: 2015
+	[Token(Token = "0x40007DF")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x188")]
+	public readonly int[] findBoxCombinationOffsetX;
+
+	// Token: 0x040007E0 RID: 2016
+	[Token(Token = "0x40007E0")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x190")]
+	public readonly int[] findBoxCombinationOffsetY;
+
+	// Token: 0x040007E1 RID: 2017
+	[Token(Token = "0x40007E1")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x198")]
+	private GameMain.Move bestMove;
+
+	// Token: 0x040007E2 RID: 2018
+	[Token(Token = "0x40007E2")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x1A0")]
+	private readonly float showTextEffectBaseDelayTime;
+
+	// Token: 0x040007E4 RID: 2020
+	[Token(Token = "0x40007E4")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x1A8")]
+	[HideInInspector]
+	public int movesRewardIndex;
+
+	// Token: 0x040007E5 RID: 2021
+	[Token(Token = "0x40007E5")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x1B0")]
+	[SerializeField]
+	private int[] powerlvs;
+
+	// Token: 0x040007E6 RID: 2022
+	[Token(Token = "0x40007E6")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x1B8")]
+	[SerializeField]
+	private GameObject powerInfo;
+
+	// Token: 0x040007E7 RID: 2023
+	[Token(Token = "0x40007E7")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x1C0")]
+	public bool isTest;
+
+	// Token: 0x02000133 RID: 307
+	[Token(Token = "0x2000133")]
+	private struct FromToCoordinate
+	{
+		// Token: 0x040007E8 RID: 2024
+		[Token(Token = "0x40007E8")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x0")]
+		public int FromX;
+
+		// Token: 0x040007E9 RID: 2025
+		[Token(Token = "0x40007E9")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x4")]
+		public int FromY;
+
+		// Token: 0x040007EA RID: 2026
+		[Token(Token = "0x40007EA")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x8")]
+		public int ToX;
+
+		// Token: 0x040007EB RID: 2027
+		[Token(Token = "0x40007EB")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0xC")]
+		public int ToY;
+	}
+
+	// Token: 0x02000134 RID: 308
+	[Token(Token = "0x2000134")]
+	public class Solution
+	{
+		// Token: 0x06000842 RID: 2114 RVA: 0x00003DE0 File Offset: 0x00001FE0
+		[Token(Token = "0x6000842")]
+		[Address(RVA = "0x1DD0540", Offset = "0x1DCC540", VA = "0x1DD0540")]
+		public bool IsCreateItemBlock()
+		{
+			return default(bool);
+		}
+
+		// Token: 0x06000843 RID: 2115 RVA: 0x00002053 File Offset: 0x00000253
+		[Token(Token = "0x6000843")]
+		[Address(RVA = "0x1DD057C", Offset = "0x1DCC57C", VA = "0x1DD057C")]
+		public Solution()
+		{
+		}
+
+		// Token: 0x040007EC RID: 2028
+		[Token(Token = "0x40007EC")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x10")]
+		public int aiBackStoneCount;
+
+		// Token: 0x040007ED RID: 2029
+		[Token(Token = "0x40007ED")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x14")]
+		public int aiBackStoneIncludeRescueGingerManCount;
+
+		// Token: 0x040007EE RID: 2030
+		[Token(Token = "0x40007EE")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x18")]
+		public int aiBackStoneNullCount;
+
+		// Token: 0x040007EF RID: 2031
+		[Token(Token = "0x40007EF")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x1C")]
+		public int boxCombinationCount;
+
+		// Token: 0x040007F0 RID: 2032
+		[Token(Token = "0x40007F0")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x20")]
+		public bool[] boxCombinationPos;
+
+		// Token: 0x040007F1 RID: 2033
+		[Token(Token = "0x40007F1")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x28")]
+		public int color;
+
+		// Token: 0x040007F2 RID: 2034
+		[Token(Token = "0x40007F2")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x2C")]
+		public int count;
+
+		// Token: 0x040007F3 RID: 2035
+		[Token(Token = "0x40007F3")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x30")]
+		public bool h;
+
+		// Token: 0x040007F4 RID: 2036
+		[Token(Token = "0x40007F4")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x34")]
+		public int itemBlock33Count;
+
+		// Token: 0x040007F5 RID: 2037
+		[Token(Token = "0x40007F5")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x38")]
+		public int itemBlock41Count;
+
+		// Token: 0x040007F6 RID: 2038
+		[Token(Token = "0x40007F6")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x3C")]
+		public int itemBlock51Count;
+
+		// Token: 0x040007F7 RID: 2039
+		[Token(Token = "0x40007F7")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x40")]
+		public int negH;
+
+		// Token: 0x040007F8 RID: 2040
+		[Token(Token = "0x40007F8")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x44")]
+		public int negV;
+
+		// Token: 0x040007F9 RID: 2041
+		[Token(Token = "0x40007F9")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x48")]
+		public int posH;
+
+		// Token: 0x040007FA RID: 2042
+		[Token(Token = "0x40007FA")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x4C")]
+		public int posV;
+
+		// Token: 0x040007FB RID: 2043
+		[Token(Token = "0x40007FB")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x50")]
+		public int potential;
+
+		// Token: 0x040007FC RID: 2044
+		[Token(Token = "0x40007FC")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x54")]
+		public bool v;
+
+		// Token: 0x040007FD RID: 2045
+		[Token(Token = "0x40007FD")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x58")]
+		public int x;
+
+		// Token: 0x040007FE RID: 2046
+		[Token(Token = "0x40007FE")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x5C")]
+		public int y;
+	}
+
+	// Token: 0x02000135 RID: 309
+	[Token(Token = "0x2000135")]
+	public class Move
+	{
+		// Token: 0x06000844 RID: 2116 RVA: 0x00002053 File Offset: 0x00000253
+		[Token(Token = "0x6000844")]
+		[Address(RVA = "0x1DD05D8", Offset = "0x1DCC5D8", VA = "0x1DD05D8")]
+		public Move()
+		{
+		}
+
+		// Token: 0x040007FF RID: 2047
+		[Token(Token = "0x40007FF")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x10")]
+		public int fromX;
+
+		// Token: 0x04000800 RID: 2048
+		[Token(Token = "0x4000800")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x14")]
+		public int fromY;
+
+		// Token: 0x04000801 RID: 2049
+		[Token(Token = "0x4000801")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x18")]
+		public int potencial;
+
+		// Token: 0x04000802 RID: 2050
+		[Token(Token = "0x4000802")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x20")]
+		public GameMain.Solution solution;
+
+		// Token: 0x04000803 RID: 2051
+		[Token(Token = "0x4000803")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x28")]
+		public int toX;
+
+		// Token: 0x04000804 RID: 2052
+		[Token(Token = "0x4000804")]
+		[Il2CppDummyDll.FieldOffset(Offset = "0x2C")]
+		public int toY;
+	}
+}
+"
+---------------------------
+BoardManager Full Code :
+
+"using System;
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using Il2CppDummyDll;
+using UnityEngine;
+
+// Token: 0x020000BE RID: 190
+[Token(Token = "0x20000BE")]
+public class BoardManager : MonoBehaviour
+{
+	// Token: 0x17000090 RID: 144
+	// (get) Token: 0x0600049B RID: 1179 RVA: 0x00002D60 File Offset: 0x00000F60
+	[Token(Token = "0x17000090")]
+	public static int width
+	{
+		[Token(Token = "0x600049B")]
+		[Address(RVA = "0x1D0E71C", Offset = "0x1D0A71C", VA = "0x1D0E71C")]
+		get
+		{
+			return 0;
+		}
+	}
+
+	// Token: 0x17000091 RID: 145
+	// (get) Token: 0x0600049C RID: 1180 RVA: 0x00002D78 File Offset: 0x00000F78
+	[Token(Token = "0x17000091")]
+	public static int height
+	{
+		[Token(Token = "0x600049C")]
+		[Address(RVA = "0x1D0E774", Offset = "0x1D0A774", VA = "0x1D0E774")]
+		get
+		{
+			return 0;
+		}
+	}
+
+	// Token: 0x0600049D RID: 1181 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600049D")]
+	[Address(RVA = "0x1D0E7CC", Offset = "0x1D0A7CC", VA = "0x1D0E7CC")]
+	private void Awake()
+	{
+	}
+
+	// Token: 0x0600049E RID: 1182 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600049E")]
+	[Address(RVA = "0x1D0E874", Offset = "0x1D0A874", VA = "0x1D0E874")]
+	public void StartBoard()
+	{
+	}
+
+	// Token: 0x0600049F RID: 1183 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600049F")]
+	[Address(RVA = "0x1D0ED6C", Offset = "0x1D0AD6C", VA = "0x1D0ED6C")]
+	public void CompatibleCreateBlock(int x, int y, IBlockType type, int param1, int param2)
+	{
+	}
+
+	// Token: 0x060004A0 RID: 1184 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004A0")]
+	[Address(RVA = "0x1D0E87C", Offset = "0x1D0A87C", VA = "0x1D0E87C")]
+	public void CreateBoard()
+	{
+	}
+
+	// Token: 0x060004A1 RID: 1185 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004A1")]
+	[Address(RVA = "0x1D1578C", Offset = "0x1D1178C", VA = "0x1D1578C")]
+	private IEnumerator doTutorialCursorAnimation(int startX, int startY, int endX, int endY)
+	{
+		return null;
+	}
+
+	// Token: 0x060004A2 RID: 1186 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004A2")]
+	[Address(RVA = "0x1D12438", Offset = "0x1D0E438", VA = "0x1D12438")]
+	private void SetRibbonBlocks()
+	{
+	}
+
+	// Token: 0x060004A3 RID: 1187 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004A3")]
+	[Address(RVA = "0x1D1243C", Offset = "0x1D0E43C", VA = "0x1D1243C")]
+	private void SetYarnBlocks()
+	{
+	}
+
+	// Token: 0x060004A4 RID: 1188 RVA: 0x00002D90 File Offset: 0x00000F90
+	[Token(Token = "0x60004A4")]
+	[Address(RVA = "0x1D1581C", Offset = "0x1D1181C", VA = "0x1D1581C")]
+	private bool IsInvalidCoordi(int x, int y)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004A5 RID: 1189 RVA: 0x00002DA8 File Offset: 0x00000FA8
+	[Token(Token = "0x60004A5")]
+	[Address(RVA = "0x1D1585C", Offset = "0x1D1185C", VA = "0x1D1585C")]
+	private int FindYarnPath(Side side, int x, int y, int distance = 1)
+	{
+		return 0;
+	}
+
+	// Token: 0x060004A6 RID: 1190 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004A6")]
+	[Address(RVA = "0x1D15E40", Offset = "0x1D11E40", VA = "0x1D15E40")]
+	private void LinkYarns(Yarn curYarn, Side side, int x, int y)
+	{
+	}
+
+	// Token: 0x060004A7 RID: 1191 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004A7")]
+	[Address(RVA = "0x1D159B8", Offset = "0x1D119B8", VA = "0x1D159B8")]
+	private void CreateYarnAndClothButton(Side side, int x, int y, int distance)
+	{
+	}
+
+	// Token: 0x060004A8 RID: 1192 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004A8")]
+	[Address(RVA = "0x1D137F8", Offset = "0x1D0F7F8", VA = "0x1D137F8")]
+	private void SetRailSlot()
+	{
+	}
+
+	// Token: 0x060004A9 RID: 1193 RVA: 0x00002DC0 File Offset: 0x00000FC0
+	[Token(Token = "0x60004A9")]
+	[Address(RVA = "0x1D15FDC", Offset = "0x1D11FDC", VA = "0x1D15FDC")]
+	public Side GetGateDirection(int gateX, int gateY)
+	{
+		return Side.Null;
+	}
+
+	// Token: 0x060004AA RID: 1194 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004AA")]
+	[Address(RVA = "0x1D16020", Offset = "0x1D12020", VA = "0x1D16020")]
+	public IEnumerator GoNextMapOrClear()
+	{
+		return null;
+	}
+
+	// Token: 0x060004AB RID: 1195 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004AB")]
+	[Address(RVA = "0x1D16088", Offset = "0x1D12088", VA = "0x1D16088")]
+	public IEnumerator ProcessDigMoveNextLine()
+	{
+		return null;
+	}
+
+	// Token: 0x060004AC RID: 1196 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004AC")]
+	[Address(RVA = "0x1D160F0", Offset = "0x1D120F0", VA = "0x1D160F0")]
+	private IEnumerator MoveNextMap()
+	{
+		return null;
+	}
+
+	// Token: 0x060004AD RID: 1197 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004AD")]
+	[Address(RVA = "0x1D10BD0", Offset = "0x1D0CBD0", VA = "0x1D10BD0")]
+	public void RemoveBoard()
+	{
+	}
+
+	// Token: 0x060004AE RID: 1198 RVA: 0x00002DD8 File Offset: 0x00000FD8
+	[Token(Token = "0x60004AE")]
+	[Address(RVA = "0x1D1637C", Offset = "0x1D1237C", VA = "0x1D1637C")]
+	public Vector3 GetSlotPosition(int x, int y)
+	{
+		return default(Vector3);
+	}
+
+	// Token: 0x060004AF RID: 1199 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004AF")]
+	[Address(RVA = "0x1D10D30", Offset = "0x1D0CD30", VA = "0x1D10D30")]
+	private void GenerateSlots()
+	{
+	}
+
+	// Token: 0x060004B0 RID: 1200 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004B0")]
+	[Address(RVA = "0x1D16EBC", Offset = "0x1D12EBC", VA = "0x1D16EBC")]
+	public void DrawMovingSlotOutlineEffect(MapDataMovingSlot movingSlot)
+	{
+	}
+
+	// Token: 0x060004B1 RID: 1201 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004B1")]
+	[Address(RVA = "0x1D17198", Offset = "0x1D13198", VA = "0x1D17198")]
+	public void DrawRotationSlotOutlineEffect(MapDataRotationSlot rotationSlot)
+	{
+	}
+
+	// Token: 0x060004B2 RID: 1202 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004B2")]
+	[Address(RVA = "0x1D15414", Offset = "0x1D11414", VA = "0x1D15414")]
+	public void DrawTutorialOutlineEffect()
+	{
+	}
+
+	// Token: 0x060004B3 RID: 1203 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004B3")]
+	[Address(RVA = "0x1D16158", Offset = "0x1D12158", VA = "0x1D16158")]
+	public void RemoveTutorialOutlineEffect()
+	{
+	}
+
+	// Token: 0x060004B4 RID: 1204 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004B4")]
+	[Address(RVA = "0x1D17C3C", Offset = "0x1D13C3C", VA = "0x1D17C3C")]
+	private void createTutorialOutlineEffect(int x, int y, Side side)
+	{
+	}
+
+	// Token: 0x060004B5 RID: 1205 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004B5")]
+	[Address(RVA = "0x1D17734", Offset = "0x1D13734", VA = "0x1D17734")]
+	private void DrawOutlineEffect(List<GameObject> addLists, Transform parentSlot, SideCheckFill sideData)
+	{
+	}
+
+	// Token: 0x060004B6 RID: 1206 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004B6")]
+	[Address(RVA = "0x1D1821C", Offset = "0x1D1421C", VA = "0x1D1821C")]
+	private GameObject CreateMovableBoardEffect(Transform parent)
+	{
+		return null;
+	}
+
+	// Token: 0x060004B7 RID: 1207 RVA: 0x00002DF0 File Offset: 0x00000FF0
+	[Token(Token = "0x60004B7")]
+	[Address(RVA = "0x1D1745C", Offset = "0x1D1345C", VA = "0x1D1745C")]
+	private SideCheckFill GetOutlineSideType(bool[,] baseSlots, int x, int y)
+	{
+		return SideCheckFill.None;
+	}
+
+	// Token: 0x060004B8 RID: 1208 RVA: 0x00002E08 File Offset: 0x00001008
+	[Token(Token = "0x60004B8")]
+	[Address(RVA = "0x1D182F8", Offset = "0x1D142F8", VA = "0x1D182F8")]
+	private BoardOutlineType GetOutlineType(int x, int y)
+	{
+		return BoardOutlineType.LT;
+	}
+
+	// Token: 0x060004B9 RID: 1209 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004B9")]
+	[Address(RVA = "0x1D16528", Offset = "0x1D12528", VA = "0x1D16528")]
+	public void DrawBoardOutline()
+	{
+	}
+
+	// Token: 0x060004BA RID: 1210 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004BA")]
+	[Address(RVA = "0x1D18664", Offset = "0x1D14664", VA = "0x1D18664")]
+	public void OffBoardOutline()
+	{
+	}
+
+	// Token: 0x060004BB RID: 1211 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004BB")]
+	[Address(RVA = "0x1D18778", Offset = "0x1D14778", VA = "0x1D18778")]
+	public void FadeBoardOutline(bool isFadeIn)
+	{
+	}
+
+	// Token: 0x060004BC RID: 1212 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004BC")]
+	[Address(RVA = "0x1D187EC", Offset = "0x1D147EC", VA = "0x1D187EC")]
+	private IEnumerator ProcessFadeBoardOutline(bool isFadeIn)
+	{
+		return null;
+	}
+
+	// Token: 0x060004BD RID: 1213 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004BD")]
+	[Address(RVA = "0x1D12218", Offset = "0x1D0E218", VA = "0x1D12218")]
+	private void GenerateBlocks()
+	{
+	}
+
+	// Token: 0x060004BE RID: 1214 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004BE")]
+	[Address(RVA = "0x1D12B6C", Offset = "0x1D0EB6C", VA = "0x1D12B6C")]
+	private void GenerateWalls()
+	{
+	}
+
+	// Token: 0x060004BF RID: 1215 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004BF")]
+	[Address(RVA = "0x1D131E4", Offset = "0x1D0F1E4", VA = "0x1D131E4")]
+	private void GenerateDropWalls()
+	{
+	}
+
+	// Token: 0x060004C0 RID: 1216 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C0")]
+	[Address(RVA = "0x1D13650", Offset = "0x1D0F650", VA = "0x1D13650")]
+	private void GeneratePowerups()
+	{
+	}
+
+	// Token: 0x060004C1 RID: 1217 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C1")]
+	[Address(RVA = "0x1D13470", Offset = "0x1D0F470", VA = "0x1D13470")]
+	private void GenerateChips()
+	{
+	}
+
+	// Token: 0x060004C2 RID: 1218 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C2")]
+	[Address(RVA = "0x1D145B8", Offset = "0x1D105B8", VA = "0x1D145B8")]
+	private void GenerateJelly()
+	{
+	}
+
+	// Token: 0x060004C3 RID: 1219 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C3")]
+	[Address(RVA = "0x1D1921C", Offset = "0x1D1521C", VA = "0x1D1921C")]
+	public void GenerateJellyFirst()
+	{
+	}
+
+	// Token: 0x060004C4 RID: 1220 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C4")]
+	[Address(RVA = "0x1D19384", Offset = "0x1D15384", VA = "0x1D19384")]
+	public void GenerateEmptyTile()
+	{
+	}
+
+	// Token: 0x060004C5 RID: 1221 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C5")]
+	[Address(RVA = "0x1D146EC", Offset = "0x1D106EC", VA = "0x1D146EC")]
+	private void GenerateMilkTileFirst()
+	{
+	}
+
+	// Token: 0x060004C6 RID: 1222 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C6")]
+	[Address(RVA = "0x1D19518", Offset = "0x1D15518", VA = "0x1D19518")]
+	public void GenerateMilkTileRow(int height)
+	{
+	}
+
+	// Token: 0x060004C7 RID: 1223 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C7")]
+	[Address(RVA = "0x1D14074", Offset = "0x1D10074", VA = "0x1D14074")]
+	private void GenerateSweetRoadGate()
+	{
+	}
+
+	// Token: 0x060004C8 RID: 1224 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C8")]
+	[Address(RVA = "0x1D19628", Offset = "0x1D15628", VA = "0x1D19628")]
+	public void StartEffectSweetRoadGateFillMilk(bool isEnterGate)
+	{
+	}
+
+	// Token: 0x060004C9 RID: 1225 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004C9")]
+	[Address(RVA = "0x1D14940", Offset = "0x1D10940", VA = "0x1D14940")]
+	private void GenerateRescueGingerMan()
+	{
+	}
+
+	// Token: 0x060004CA RID: 1226 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004CA")]
+	[Address(RVA = "0x1D198A8", Offset = "0x1D158A8", VA = "0x1D198A8")]
+	public GameObject GetNewFruitBoxDragLine(Vector3 from, Vector3 to)
+	{
+		return null;
+	}
+
+	// Token: 0x060004CB RID: 1227 RVA: 0x00002E20 File Offset: 0x00001020
+	[Token(Token = "0x60004CB")]
+	[Address(RVA = "0x1D19DAC", Offset = "0x1D15DAC", VA = "0x1D19DAC")]
+	public bool IsInvalidChipID(int chipID)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004CC RID: 1228 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004CC")]
+	[Address(RVA = "0x1D19DB8", Offset = "0x1D15DB8", VA = "0x1D19DB8")]
+	public Chip GetNewSimpleChip(int x, int y, Vector3 position)
+	{
+		return null;
+	}
+
+	// Token: 0x060004CD RID: 1229 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004CD")]
+	[Address(RVA = "0x1D19E24", Offset = "0x1D15E24", VA = "0x1D19E24")]
+	public Chip GetBringDownChip(int x, int y, Vector3 position)
+	{
+		return null;
+	}
+
+	// Token: 0x060004CE RID: 1230 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004CE")]
+	[Address(RVA = "0x1D19FEC", Offset = "0x1D15FEC", VA = "0x1D19FEC")]
+	public Chip GetOreoCrackerChip(int x, int y, Vector3 position)
+	{
+		return null;
+	}
+
+	// Token: 0x060004CF RID: 1231 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004CF")]
+	[Address(RVA = "0x1D19214", Offset = "0x1D15214", VA = "0x1D19214")]
+	public Chip GetNewStone(int x, int y, Vector3 position)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D0 RID: 1232 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D0")]
+	[Address(RVA = "0x1D18FF0", Offset = "0x1D14FF0", VA = "0x1D18FF0")]
+	public Chip GetNewSimpleChip(int x, int y, Vector3 position, int id)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D1 RID: 1233 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D1")]
+	[Address(RVA = "0x1D1A154", Offset = "0x1D16154", VA = "0x1D1A154")]
+	public Chip GetNewPlusMoveChip(int x, int y, Vector3 position, int id)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D2 RID: 1234 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D2")]
+	[Address(RVA = "0x1D1A2C8", Offset = "0x1D162C8", VA = "0x1D1A2C8")]
+	public Chip GetNewBomb(int x, int y, Vector3 position, int id, bool isCombination = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D3 RID: 1235 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D3")]
+	[Address(RVA = "0x1D1A45C", Offset = "0x1D1645C", VA = "0x1D1A45C")]
+	public Chip GetNewRainbowBomb(int x, int y, Vector3 position, bool isCombination = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D4 RID: 1236 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D4")]
+	[Address(RVA = "0x1D1A5B0", Offset = "0x1D165B0", VA = "0x1D1A5B0")]
+	public Chip GetNewColorHBomb(int x, int y, Vector3 position, int id, bool isCombination = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D5 RID: 1237 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D5")]
+	[Address(RVA = "0x1D1A744", Offset = "0x1D16744", VA = "0x1D1A744")]
+	public Chip GetNewColorVBomb(int x, int y, Vector3 position, int id, bool isCombination = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D6 RID: 1238 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D6")]
+	[Address(RVA = "0x1D1A8D8", Offset = "0x1D168D8", VA = "0x1D1A8D8")]
+	public CandyChip GetNewCandyChip(int x, int y, Vector3 position, bool isCombination = false)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D7 RID: 1239 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D7")]
+	[Address(RVA = "0x1D189BC", Offset = "0x1D149BC", VA = "0x1D189BC")]
+	public Chip AddPowerup(int x, int y, Powerup p, int setChipId = -1)
+	{
+		return null;
+	}
+
+	// Token: 0x060004D8 RID: 1240 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004D8")]
+	[Address(RVA = "0x1D1AA48", Offset = "0x1D16A48", VA = "0x1D1AA48")]
+	public void AddPowerup(Powerup p)
+	{
+	}
+
+	// Token: 0x060004D9 RID: 1241 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004D9")]
+	[Address(RVA = "0x1D10ABC", Offset = "0x1D0CABC", VA = "0x1D10ABC")]
+	public Slot GetSlot(int x, int y)
+	{
+		return null;
+	}
+
+	// Token: 0x060004DA RID: 1242 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004DA")]
+	[Address(RVA = "0x1D1ABC8", Offset = "0x1D16BC8", VA = "0x1D1ABC8")]
+	public Slot GetSlotFromSlotPosition(int x, int y)
+	{
+		return null;
+	}
+
+	// Token: 0x060004DB RID: 1243 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004DB")]
+	[Address(RVA = "0x1D1AD64", Offset = "0x1D16D64", VA = "0x1D1AD64")]
+	public void ScaleObject()
+	{
+	}
+
+	// Token: 0x060004DC RID: 1244 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004DC")]
+	[Address(RVA = "0x1D1AE84", Offset = "0x1D16E84", VA = "0x1D1AE84")]
+	private void ScaleUpAndDown(GameObject obj)
+	{
+	}
+
+	// Token: 0x060004DD RID: 1245 RVA: 0x00002E38 File Offset: 0x00001038
+	[Token(Token = "0x60004DD")]
+	[Address(RVA = "0x1D1AFF0", Offset = "0x1D16FF0", VA = "0x1D1AFF0")]
+	public float MoveSlot(int fromX, int fromY, int targetX, int targetY, float movingTime, Ease easeType = Ease.OutQuad)
+	{
+		return 0f;
+	}
+
+	// Token: 0x060004DE RID: 1246 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004DE")]
+	[Address(RVA = "0x1D1B43C", Offset = "0x1D1743C", VA = "0x1D1B43C")]
+	public IEnumerator TweenScaleSlot(GameObject obj, Ease easeType = Ease.OutQuad)
+	{
+		return null;
+	}
+
+	// Token: 0x060004DF RID: 1247 RVA: 0x00002E50 File Offset: 0x00001050
+	[Token(Token = "0x60004DF")]
+	[Address(RVA = "0x1D1B4B4", Offset = "0x1D174B4", VA = "0x1D1B4B4")]
+	public bool CheckCanRemoveRibbonBlock(int sx, int sy, Ribbon startRibbonData)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004E0 RID: 1248 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004E0")]
+	[Address(RVA = "0x1D1B7A0", Offset = "0x1D177A0", VA = "0x1D1B7A0")]
+	public void ReplaceRibbonLink(int sx, int sy, Ribbon startRibbonData)
+	{
+	}
+
+	// Token: 0x060004E1 RID: 1249 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004E1")]
+	[Address(RVA = "0x1D1299C", Offset = "0x1D0E99C", VA = "0x1D1299C")]
+	public void RefreshTunnelWall()
+	{
+	}
+
+	// Token: 0x060004E2 RID: 1250 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004E2")]
+	[Address(RVA = "0x1D1BAE4", Offset = "0x1D17AE4", VA = "0x1D1BAE4")]
+	private void RefreshWall()
+	{
+	}
+
+	// Token: 0x060004E3 RID: 1251 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004E3")]
+	[Address(RVA = "0x1D1BC14", Offset = "0x1D17C14", VA = "0x1D1BC14")]
+	public void RefreshNearSlots()
+	{
+	}
+
+	// Token: 0x060004E4 RID: 1252 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004E4")]
+	[Address(RVA = "0x1D18868", Offset = "0x1D14868", VA = "0x1D18868")]
+	public Slot GetNearSlot(int x, int y, Side side)
+	{
+		return null;
+	}
+
+	// Token: 0x060004E5 RID: 1253 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004E5")]
+	[Address(RVA = "0x1D15D40", Offset = "0x1D11D40", VA = "0x1D15D40")]
+	public BlockInterface GetBlock(int x, int y)
+	{
+		return null;
+	}
+
+	// Token: 0x060004E6 RID: 1254 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004E6")]
+	[Address(RVA = "0x1D1BDB0", Offset = "0x1D17DB0", VA = "0x1D1BDB0")]
+	public void DelaySlotCrush(float delay, int x, int y, bool radius, ScoreType scoreType = ScoreType.None, bool includeCrushChip = true, int addScoreBlockCount = 0, int fromCrushId = -1, Side crushDir = Side.Null, bool doPaintJelly = false, int subId = -1)
+	{
+	}
+
+	// Token: 0x060004E7 RID: 1255 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004E7")]
+	[Address(RVA = "0x1D1BDF0", Offset = "0x1D17DF0", VA = "0x1D1BDF0")]
+	private IEnumerator delayedSlotCrush(float delay, int x, int y, bool radius, ScoreType scoreType = ScoreType.None, bool includeCrushChip = true, int addScoreBlockCount = 0, int fromCrushId = -1, Side crushDir = Side.Null, bool doPaintJelly = false, int subId = -1)
+	{
+		return null;
+	}
+
+	// Token: 0x060004E8 RID: 1256 RVA: 0x00002E68 File Offset: 0x00001068
+	[Token(Token = "0x60004E8")]
+	[Address(RVA = "0x1D1BEDC", Offset = "0x1D17EDC", VA = "0x1D1BEDC")]
+	public bool SlotCrush(int x, int y, bool radius, ScoreType scoreType = ScoreType.None, bool includeCrushChip = true, int addScoreBlockCount = 0, int fromCrushId = -1, Side crushDir = Side.Null, bool doPaintJelly = false, int subId = -1)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004E9 RID: 1257 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004E9")]
+	[Address(RVA = "0x1D1C4F0", Offset = "0x1D184F0", VA = "0x1D1C4F0")]
+	public void SetScore(int x, int y, ScoreType scoreType, int colorId = -1, int addScoreBlockCount = 0)
+	{
+	}
+
+	// Token: 0x060004EA RID: 1258 RVA: 0x00002E80 File Offset: 0x00001080
+	[Token(Token = "0x60004EA")]
+	[Address(RVA = "0x1D1C7C8", Offset = "0x1D187C8", VA = "0x1D1C7C8")]
+	public bool BlockCrush(int x, int y, bool radius, int fromCrushId = -1, int subId = -1)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004EB RID: 1259 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004EB")]
+	[Address(RVA = "0x1D1CA74", Offset = "0x1D18A74", VA = "0x1D1CA74")]
+	public void SetChipPositionNextDownChip(int x, int y)
+	{
+	}
+
+	// Token: 0x060004EC RID: 1260 RVA: 0x00002E98 File Offset: 0x00001098
+	[Token(Token = "0x60004EC")]
+	[Address(RVA = "0x1D1CCF4", Offset = "0x1D18CF4", VA = "0x1D1CCF4")]
+	private bool IsDigBlock(int x, int y)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004ED RID: 1261 RVA: 0x00002EB0 File Offset: 0x000010B0
+	[Token(Token = "0x60004ED")]
+	[Address(RVA = "0x1D1CD98", Offset = "0x1D18D98", VA = "0x1D1CD98")]
+	public int SearchHighestDigBlock()
+	{
+		return 0;
+	}
+
+	// Token: 0x060004EE RID: 1262 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004EE")]
+	[Address(RVA = "0x1D1D074", Offset = "0x1D19074", VA = "0x1D1D074")]
+	private IEnumerator ProcessDigBoard()
+	{
+		return null;
+	}
+
+	// Token: 0x060004EF RID: 1263 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004EF")]
+	[Address(RVA = "0x1D1D0DC", Offset = "0x1D190DC", VA = "0x1D1D0DC")]
+	private void DigExecuteForLoopContents(int x, int y)
+	{
+	}
+
+	// Token: 0x060004F0 RID: 1264 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004F0")]
+	[Address(RVA = "0x1D1D458", Offset = "0x1D19458", VA = "0x1D1D458")]
+	private IEnumerator ProcessDigDestroySlot(int2 grid)
+	{
+		return null;
+	}
+
+	// Token: 0x060004F1 RID: 1265 RVA: 0x00002EC8 File Offset: 0x000010C8
+	[Token(Token = "0x60004F1")]
+	[Address(RVA = "0x1D1D388", Offset = "0x1D19388", VA = "0x1D1D388")]
+	private bool DigCheckRangeOut(int x, int y)
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004F2 RID: 1266 RVA: 0x00002EE0 File Offset: 0x000010E0
+	[Token(Token = "0x60004F2")]
+	[Address(RVA = "0x1D1E1B4", Offset = "0x1D1A1B4", VA = "0x1D1E1B4")]
+	public bool DigCheckLineDataIndexEnd()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x060004F3 RID: 1267 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004F3")]
+	[Address(RVA = "0x1D1E2F4", Offset = "0x1D1A2F4", VA = "0x1D1E2F4")]
+	public void DigAddUpLineDataIndex()
+	{
+	}
+
+	// Token: 0x060004F4 RID: 1268 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004F4")]
+	[Address(RVA = "0x1D1E360", Offset = "0x1D1A360", VA = "0x1D1E360")]
+	private void DigDestroySlotData(int x, int y)
+	{
+	}
+
+	// Token: 0x060004F5 RID: 1269 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004F5")]
+	[Address(RVA = "0x1D1E4D4", Offset = "0x1D1A4D4", VA = "0x1D1E4D4")]
+	public void DigDestroySlot(Slot fromSlot, Slot toSlot)
+	{
+	}
+
+	// Token: 0x060004F6 RID: 1270 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60004F6")]
+	[Address(RVA = "0x1D1D4CC", Offset = "0x1D194CC", VA = "0x1D1D4CC")]
+	public Slot DigCreateSlot(int x, int y)
+	{
+		return null;
+	}
+
+	// Token: 0x060004F7 RID: 1271 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004F7")]
+	[Address(RVA = "0x1D1DB18", Offset = "0x1D19B18", VA = "0x1D1DB18")]
+	private void DigCreateChip(int x, int y)
+	{
+	}
+
+	// Token: 0x060004F8 RID: 1272 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004F8")]
+	[Address(RVA = "0x1D1E008", Offset = "0x1D1A008", VA = "0x1D1E008")]
+	private void DigCreatePowerups(int x, int y)
+	{
+	}
+
+	// Token: 0x060004F9 RID: 1273 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004F9")]
+	[Address(RVA = "0x1D1D988", Offset = "0x1D19988", VA = "0x1D1D988")]
+	public void DigCreateBlock(int x, int y)
+	{
+	}
+
+	// Token: 0x060004FA RID: 1274 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60004FA")]
+	[Address(RVA = "0x1D1E800", Offset = "0x1D1A800", VA = "0x1D1E800")]
+	public BoardManager()
+	{
+	}
+
+	// Token: 0x0400050E RID: 1294
+	[Token(Token = "0x400050E")]
+	[FieldOffset(Offset = "0x0")]
+	public static readonly float MOVING_SLOT_TIME;
+
+	// Token: 0x0400050F RID: 1295
+	[Token(Token = "0x400050F")]
+	[FieldOffset(Offset = "0x8")]
+	public static BoardManager main;
+
+	// Token: 0x04000510 RID: 1296
+	[Token(Token = "0x4000510")]
+	[FieldOffset(Offset = "0x10")]
+	public static float slotoffset;
+
+	// Token: 0x04000511 RID: 1297
+	[Token(Token = "0x4000511")]
+	[FieldOffset(Offset = "0x20")]
+	private readonly float outlineRectObjectOffset;
+
+	// Token: 0x04000512 RID: 1298
+	[Token(Token = "0x4000512")]
+	[FieldOffset(Offset = "0x24")]
+	private readonly float outlineRoundObjectOffset;
+
+	// Token: 0x04000513 RID: 1299
+	[Token(Token = "0x4000513")]
+	[FieldOffset(Offset = "0x28")]
+	private readonly float outlineStraightHOffsetX;
+
+	// Token: 0x04000514 RID: 1300
+	[Token(Token = "0x4000514")]
+	[FieldOffset(Offset = "0x2C")]
+	private readonly float outlineStraightHOffsetY;
+
+	// Token: 0x04000515 RID: 1301
+	[Token(Token = "0x4000515")]
+	[FieldOffset(Offset = "0x30")]
+	private readonly float outlineStraightVOffsetX;
+
+	// Token: 0x04000516 RID: 1302
+	[Token(Token = "0x4000516")]
+	[FieldOffset(Offset = "0x34")]
+	private readonly float outlineStraightVOffsetY;
+
+	// Token: 0x04000517 RID: 1303
+	[Token(Token = "0x4000517")]
+	[FieldOffset(Offset = "0x38")]
+	private readonly float arrowOffset;
+
+	// Token: 0x04000518 RID: 1304
+	[Token(Token = "0x4000518")]
+	[FieldOffset(Offset = "0x40")]
+	public MapBoardData boardData;
+
+	// Token: 0x04000519 RID: 1305
+	[Token(Token = "0x4000519")]
+	[FieldOffset(Offset = "0x48")]
+	private GameObject BoardOutlineGroup;
+
+	// Token: 0x0400051A RID: 1306
+	[Token(Token = "0x400051A")]
+	[FieldOffset(Offset = "0x50")]
+	public bool[,] bringDownGenerator;
+
+	// Token: 0x0400051B RID: 1307
+	[Token(Token = "0x400051B")]
+	[FieldOffset(Offset = "0x58")]
+	public string[] chipTypes;
+
+	// Token: 0x0400051C RID: 1308
+	[Token(Token = "0x400051C")]
+	[FieldOffset(Offset = "0x60")]
+	public string[] chipTypesSimple;
+
+	// Token: 0x0400051D RID: 1309
+	[Token(Token = "0x400051D")]
+	[FieldOffset(Offset = "0x68")]
+	public int CurrentMapIndex;
+
+	// Token: 0x0400051E RID: 1310
+	[Token(Token = "0x400051E")]
+	[FieldOffset(Offset = "0x6C")]
+	private readonly float defaultMutekiTime;
+
+	// Token: 0x0400051F RID: 1311
+	[Token(Token = "0x400051F")]
+	[FieldOffset(Offset = "0x70")]
+	public Dictionary<BoardPosition, MapDataGeneratorDrop> dicGeneratorDrop;
+
+	// Token: 0x04000520 RID: 1312
+	[Token(Token = "0x4000520")]
+	[FieldOffset(Offset = "0x78")]
+	public Dictionary<BoardPosition, MapDataGeneratorSpecialDrop> dicGeneratorSpecialDrop;
+
+	// Token: 0x04000521 RID: 1313
+	[Token(Token = "0x4000521")]
+	[FieldOffset(Offset = "0x80")]
+	private Vector3 dragLineRotationVector45_1;
+
+	// Token: 0x04000522 RID: 1314
+	[Token(Token = "0x4000522")]
+	[FieldOffset(Offset = "0x8C")]
+	private Vector3 dragLineRotationVector45_2;
+
+	// Token: 0x04000523 RID: 1315
+	[Token(Token = "0x4000523")]
+	[FieldOffset(Offset = "0x98")]
+	private Vector3 dragLineRotationVectorM45_1;
+
+	// Token: 0x04000524 RID: 1316
+	[Token(Token = "0x4000524")]
+	[FieldOffset(Offset = "0xA4")]
+	private Vector3 dragLineRotationVectorM45_2;
+
+	// Token: 0x04000525 RID: 1317
+	[Token(Token = "0x4000525")]
+	[FieldOffset(Offset = "0xB0")]
+	[HideInInspector]
+	public bool enabledTutorialOutlineEffect;
+
+	// Token: 0x04000526 RID: 1318
+	[Token(Token = "0x4000526")]
+	[FieldOffset(Offset = "0xB1")]
+	public bool IsMovingNextLine;
+
+	// Token: 0x04000527 RID: 1319
+	[Token(Token = "0x4000527")]
+	[FieldOffset(Offset = "0xB8")]
+	public List<CandyFactory> listCandyFactory;
+
+	// Token: 0x04000528 RID: 1320
+	[Token(Token = "0x4000528")]
+	[FieldOffset(Offset = "0xC0")]
+	public List<Crow> listCrowBlock;
+
+	// Token: 0x04000529 RID: 1321
+	[Token(Token = "0x4000529")]
+	[FieldOffset(Offset = "0xC8")]
+	public List<PastryBag> listPastryBag;
+
+	// Token: 0x0400052A RID: 1322
+	[Token(Token = "0x400052A")]
+	[FieldOffset(Offset = "0xD0")]
+	public List<Slot> listRailStartSlot;
+
+	// Token: 0x0400052B RID: 1323
+	[Token(Token = "0x400052B")]
+	[FieldOffset(Offset = "0xD8")]
+	public List<GreenSlimeParent> listSlime;
+
+	// Token: 0x0400052C RID: 1324
+	[Token(Token = "0x400052C")]
+	[FieldOffset(Offset = "0xE0")]
+	public List<MilkCarton> listMilkCarton;
+
+	// Token: 0x0400052D RID: 1325
+	[Token(Token = "0x400052D")]
+	[FieldOffset(Offset = "0xE8")]
+	public List<GameObject> listCowBell;
+
+	// Token: 0x0400052E RID: 1326
+	[Token(Token = "0x400052E")]
+	[FieldOffset(Offset = "0xF0")]
+	public List<NumberChocolateBlock> listNumberChocolate;
+
+	// Token: 0x0400052F RID: 1327
+	[Token(Token = "0x400052F")]
+	[FieldOffset(Offset = "0xF8")]
+	public List<Wall> listWall;
+
+	// Token: 0x04000530 RID: 1328
+	[Token(Token = "0x4000530")]
+	[FieldOffset(Offset = "0x100")]
+	[HideInInspector]
+	public GameObject mask;
+
+	// Token: 0x04000531 RID: 1329
+	[Token(Token = "0x4000531")]
+	[FieldOffset(Offset = "0x108")]
+	public Dictionary<string, GameObject> ObjRescueGingerMan;
+
+	// Token: 0x04000532 RID: 1330
+	[Token(Token = "0x4000532")]
+	[FieldOffset(Offset = "0x110")]
+	private GameObject objSweetRoadGateEnter;
+
+	// Token: 0x04000533 RID: 1331
+	[Token(Token = "0x4000533")]
+	[FieldOffset(Offset = "0x118")]
+	private GameObject objSweetRoadGateExit;
+
+	// Token: 0x04000534 RID: 1332
+	[Token(Token = "0x4000534")]
+	[FieldOffset(Offset = "0x120")]
+	private GameObject objSweetRoadGateExitArrow;
+
+	// Token: 0x04000535 RID: 1333
+	[Token(Token = "0x4000535")]
+	[FieldOffset(Offset = "0x128")]
+	private GameObject objSweetRoadSomething;
+
+	// Token: 0x04000536 RID: 1334
+	[Token(Token = "0x4000536")]
+	[FieldOffset(Offset = "0x130")]
+	private readonly List<GameObject> objTutorialEffects;
+
+	// Token: 0x04000537 RID: 1335
+	[Token(Token = "0x4000537")]
+	[FieldOffset(Offset = "0x138")]
+	private GameObject objTutorialGuideCursor;
+
+	// Token: 0x04000538 RID: 1336
+	[Token(Token = "0x4000538")]
+	[FieldOffset(Offset = "0x140")]
+	private GameObject oldSlotGroup;
+
+	// Token: 0x04000539 RID: 1337
+	[Token(Token = "0x4000539")]
+	[FieldOffset(Offset = "0x148")]
+	public GameObject[] PrefabBoardOutlines;
+
+	// Token: 0x0400053A RID: 1338
+	[Token(Token = "0x400053A")]
+	[FieldOffset(Offset = "0x150")]
+	public int remainRescueFriendInBoard;
+
+	// Token: 0x0400053B RID: 1339
+	[Token(Token = "0x400053B")]
+	[FieldOffset(Offset = "0x158")]
+	[HideInInspector]
+	public GameObject rescueGingerManGroup;
+
+	// Token: 0x0400053C RID: 1340
+	[Token(Token = "0x400053C")]
+	[FieldOffset(Offset = "0x160")]
+	private Vector3 retPosition;
+
+	// Token: 0x0400053D RID: 1341
+	[Token(Token = "0x400053D")]
+	[FieldOffset(Offset = "0x170")]
+	[HideInInspector]
+	public GameObject slotGroup;
+
+	// Token: 0x0400053E RID: 1342
+	[Token(Token = "0x400053E")]
+	[FieldOffset(Offset = "0x178")]
+	public Dictionary<int, Slot> slots;
+
+	// Token: 0x0400053F RID: 1343
+	[Token(Token = "0x400053F")]
+	[FieldOffset(Offset = "0x180")]
+	public Sprite[] SpritesSlotBackground;
+
+	// Token: 0x04000540 RID: 1344
+	[Token(Token = "0x4000540")]
+	[FieldOffset(Offset = "0x188")]
+	private bool isProcessDigBoard;
+
+	// Token: 0x04000541 RID: 1345
+	[Token(Token = "0x4000541")]
+	[FieldOffset(Offset = "0x190")]
+	public List<int> num;
+
+	// Token: 0x04000542 RID: 1346
+	[Token(Token = "0x4000542")]
+	[FieldOffset(Offset = "0x198")]
+	public List<GameObject> targetObjs;
+}
+"
+---------------------
+PlayerDataManager Full Code : 
+
+"using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Text;
+using CodeStage.AntiCheat.ObscuredTypes;
+using Il2CppDummyDll;
+using UnityEngine;
+
+// Token: 0x020001EF RID: 495
+[Token(Token = "0x20001EF")]
+public class PlayerDataManager : MonoSingleton<PlayerDataManager>
+{
+	// Token: 0x170001C4 RID: 452
+	// (get) Token: 0x06000C2A RID: 3114 RVA: 0x00005088 File Offset: 0x00003288
+	// (set) Token: 0x06000C2B RID: 3115 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x170001C4")]
+	public int Spin
+	{
+		[Token(Token = "0x6000C2A")]
+		[Address(RVA = "0x1E0CEB4", Offset = "0x1E08EB4", VA = "0x1E0CEB4")]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x6000C2B")]
+		[Address(RVA = "0x1E0CEC0", Offset = "0x1E08EC0", VA = "0x1E0CEC0")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x170001C5 RID: 453
+	// (get) Token: 0x06000C2C RID: 3116 RVA: 0x000050A0 File Offset: 0x000032A0
+	[Token(Token = "0x170001C5")]
+	public int CurrentLevelNo
+	{
+		[Token(Token = "0x6000C2C")]
+		[Address(RVA = "0x1E0CECC", Offset = "0x1E08ECC", VA = "0x1E0CECC")]
+		get
+		{
+			return 0;
+		}
+	}
+
+	// Token: 0x170001C6 RID: 454
+	// (get) Token: 0x06000C2D RID: 3117 RVA: 0x000050B8 File Offset: 0x000032B8
+	// (set) Token: 0x06000C2E RID: 3118 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x170001C6")]
+	public bool IsNewMember
+	{
+		[Token(Token = "0x6000C2D")]
+		[Address(RVA = "0x1E0CF40", Offset = "0x1E08F40", VA = "0x1E0CF40")]
+		[CompilerGenerated]
+		get
+		{
+			return default(bool);
+		}
+		[Token(Token = "0x6000C2E")]
+		[Address(RVA = "0x1E0CF48", Offset = "0x1E08F48", VA = "0x1E0CF48")]
+		[CompilerGenerated]
+		private set
+		{
+		}
+	}
+
+	// Token: 0x170001C7 RID: 455
+	// (get) Token: 0x06000C2F RID: 3119 RVA: 0x000050D0 File Offset: 0x000032D0
+	// (set) Token: 0x06000C30 RID: 3120 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x170001C7")]
+	public int Coin
+	{
+		[Token(Token = "0x6000C2F")]
+		[Address(RVA = "0x1E0CF50", Offset = "0x1E08F50", VA = "0x1E0CF50")]
+		get
+		{
+			return 0;
+		}
+		[Token(Token = "0x6000C30")]
+		[Address(RVA = "0x1E0CFBC", Offset = "0x1E08FBC", VA = "0x1E0CFBC")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x06000C31 RID: 3121 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C31")]
+	[Address(RVA = "0x1E0D02C", Offset = "0x1E0902C", VA = "0x1E0D02C")]
+	public void Start()
+	{
+	}
+
+	// Token: 0x170001C8 RID: 456
+	// (get) Token: 0x06000C32 RID: 3122 RVA: 0x000050E8 File Offset: 0x000032E8
+	// (set) Token: 0x06000C33 RID: 3123 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x170001C8")]
+	public bool HapticStatus
+	{
+		[Token(Token = "0x6000C32")]
+		[Address(RVA = "0x1E0D920", Offset = "0x1E09920", VA = "0x1E0D920")]
+		get
+		{
+			return default(bool);
+		}
+		[Token(Token = "0x6000C33")]
+		[Address(RVA = "0x1E0D974", Offset = "0x1E09974", VA = "0x1E0D974")]
+		set
+		{
+		}
+	}
+
+	// Token: 0x06000C34 RID: 3124 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C34")]
+	[Address(RVA = "0x1E0D9C0", Offset = "0x1E099C0", VA = "0x1E0D9C0")]
+	public void IncreaseCoin(int incCoin)
+	{
+	}
+
+	// Token: 0x06000C35 RID: 3125 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C35")]
+	[Address(RVA = "0x1E0DA60", Offset = "0x1E09A60", VA = "0x1E0DA60")]
+	public void DecreaseCoin(int decCoin)
+	{
+	}
+
+	// Token: 0x06000C36 RID: 3126 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C36")]
+	[Address(RVA = "0x1E0DA8C", Offset = "0x1E09A8C", VA = "0x1E0DA8C")]
+	public void SetCoin(int _coin)
+	{
+	}
+
+	// Token: 0x06000C37 RID: 3127 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C37")]
+	[Address(RVA = "0x1E0DAA4", Offset = "0x1E09AA4", VA = "0x1E0DAA4")]
+	public void LoadLastDailyBonusDate()
+	{
+	}
+
+	// Token: 0x06000C38 RID: 3128 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C38")]
+	[Address(RVA = "0x1E0DBCC", Offset = "0x1E09BCC", VA = "0x1E0DBCC")]
+	public void SetDailyBonusReceived()
+	{
+	}
+
+	// Token: 0x06000C39 RID: 3129 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C39")]
+	[Address(RVA = "0x1E0D7E0", Offset = "0x1E097E0", VA = "0x1E0D7E0")]
+	public void LoadLastLoginDateTime()
+	{
+	}
+
+	// Token: 0x06000C3A RID: 3130 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C3A")]
+	[Address(RVA = "0x1E0D488", Offset = "0x1E09488", VA = "0x1E0D488")]
+	public void MarkFirstPlay()
+	{
+	}
+
+	// Token: 0x06000C3B RID: 3131 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000C3B")]
+	[Address(RVA = "0x1E0DC9C", Offset = "0x1E09C9C", VA = "0x1E0DC9C")]
+	public static string GetDeviceID()
+	{
+		return null;
+	}
+
+	// Token: 0x06000C3C RID: 3132 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C3C")]
+	[Address(RVA = "0x1E0DE60", Offset = "0x1E09E60", VA = "0x1E0DE60")]
+	public void SetIsNewMember(int newMember)
+	{
+	}
+
+	// Token: 0x06000C3D RID: 3133 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C3D")]
+	[Address(RVA = "0x1E0DE7C", Offset = "0x1E09E7C", VA = "0x1E0DE7C")]
+	public void UpdateLevelScore(int gid, int score, int starPoint)
+	{
+	}
+
+	// Token: 0x06000C3E RID: 3134 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000C3E")]
+	[Address(RVA = "0x1E0E0D0", Offset = "0x1E0A0D0", VA = "0x1E0E0D0")]
+	public static string GetSessionEndDateTimeString()
+	{
+		return null;
+	}
+
+	// Token: 0x06000C3F RID: 3135 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C3F")]
+	[Address(RVA = "0x1E0E128", Offset = "0x1E0A128", VA = "0x1E0E128")]
+	public static void SetSessionEndDateTimeString()
+	{
+	}
+
+	// Token: 0x06000C40 RID: 3136 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000C40")]
+	[Address(RVA = "0x1E0E1B8", Offset = "0x1E0A1B8", VA = "0x1E0E1B8")]
+	public static string GetSessionStartDateTimeString()
+	{
+		return null;
+	}
+
+	// Token: 0x06000C41 RID: 3137 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C41")]
+	[Address(RVA = "0x1E0E210", Offset = "0x1E0A210", VA = "0x1E0E210")]
+	public static void SetSessionStartDateTimeString()
+	{
+	}
+
+	// Token: 0x06000C42 RID: 3138 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C42")]
+	[Address(RVA = "0x1E0E2A0", Offset = "0x1E0A2A0", VA = "0x1E0E2A0")]
+	public void CheatGetMoreBooster()
+	{
+	}
+
+	// Token: 0x06000C43 RID: 3139 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C43")]
+	[Address(RVA = "0x1E0E35C", Offset = "0x1E0A35C", VA = "0x1E0E35C")]
+	public void GetMoreBooster(int value)
+	{
+	}
+
+	// Token: 0x06000C44 RID: 3140 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C44")]
+	[Address(RVA = "0x1E0E498", Offset = "0x1E0A498", VA = "0x1E0E498")]
+	public void GetMoreBooster(int index, int value)
+	{
+	}
+
+	// Token: 0x06000C45 RID: 3141 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C45")]
+	[Address(RVA = "0x1E0E5A8", Offset = "0x1E0A5A8", VA = "0x1E0E5A8")]
+	public void RewardServerItem(ServerItemIndex itemIndex, int count, AppEventManager.ItemEarnedBy earnedBy, int gid = -1, bool holdOnUpdateCoin = false)
+	{
+	}
+
+	// Token: 0x06000C46 RID: 3142 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000C46")]
+	[Address(RVA = "0x1E0E770", Offset = "0x1E0A770", VA = "0x1E0E770")]
+	public static string GetRewardCountValue(ServerItemIndex itemIndex, int count)
+	{
+		return null;
+	}
+
+	// Token: 0x06000C47 RID: 3143 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C47")]
+	[Address(RVA = "0x1E0E7D0", Offset = "0x1E0A7D0", VA = "0x1E0E7D0")]
+	private void UpdateBoosterData(Booster.BoosterType boosterType, int count)
+	{
+	}
+
+	// Token: 0x06000C48 RID: 3144 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C48")]
+	[Address(RVA = "0x1E0E9C0", Offset = "0x1E0A9C0", VA = "0x1E0E9C0")]
+	public void IncreaseBoosterData(Booster.BoosterType boosterType, int incValue, AppEventManager.ItemEarnedBy earnedBy)
+	{
+	}
+
+	// Token: 0x06000C49 RID: 3145 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C49")]
+	[Address(RVA = "0x1E0E6E8", Offset = "0x1E0A6E8", VA = "0x1E0E6E8")]
+	public void IncreaseBoosterData(ServerItemIndex itemIndex, int incValue, AppEventManager.ItemEarnedBy earnedBy)
+	{
+	}
+
+	// Token: 0x06000C4A RID: 3146 RVA: 0x00005100 File Offset: 0x00003300
+	[Token(Token = "0x6000C4A")]
+	[Address(RVA = "0x1E0EAB0", Offset = "0x1E0AAB0", VA = "0x1E0EAB0")]
+	public int GetBoosterUiIndexesFromBoosterType(Booster.BoosterType boosterType, bool needException = true)
+	{
+		return 0;
+	}
+
+	// Token: 0x06000C4B RID: 3147 RVA: 0x00005118 File Offset: 0x00003318
+	[Token(Token = "0x6000C4B")]
+	[Address(RVA = "0x1E0EB24", Offset = "0x1E0AB24", VA = "0x1E0EB24")]
+	public bool IsPayUser()
+	{
+		return default(bool);
+	}
+
+	// Token: 0x06000C4C RID: 3148 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C4C")]
+	[Address(RVA = "0x1E0EB34", Offset = "0x1E0AB34", VA = "0x1E0EB34")]
+	public void SavePayInfo()
+	{
+	}
+
+	// Token: 0x06000C4D RID: 3149 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C4D")]
+	[Address(RVA = "0x1E0D4E8", Offset = "0x1E094E8", VA = "0x1E0D4E8")]
+	public void LoadPayInfo()
+	{
+	}
+
+	// Token: 0x06000C4E RID: 3150 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C4E")]
+	[Address(RVA = "0x1E0EBFC", Offset = "0x1E0ABFC", VA = "0x1E0EBFC")]
+	private void OnApplicationQuit()
+	{
+	}
+
+	// Token: 0x06000C4F RID: 3151 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C4F")]
+	[Address(RVA = "0x1E0EC00", Offset = "0x1E0AC00", VA = "0x1E0EC00")]
+	private void OnApplicationFocus(bool focus)
+	{
+	}
+
+	// Token: 0x06000C50 RID: 3152 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x6000C50")]
+	[Address(RVA = "0x1E0EC04", Offset = "0x1E0AC04", VA = "0x1E0EC04")]
+	public string GetJsonSaveDataForBackup()
+	{
+		return null;
+	}
+
+	// Token: 0x06000C51 RID: 3153 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C51")]
+	[Address(RVA = "0x1E0D9EC", Offset = "0x1E099EC", VA = "0x1E0D9EC")]
+	public void SaveCoinData()
+	{
+	}
+
+	// Token: 0x06000C52 RID: 3154 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C52")]
+	[Address(RVA = "0x1E0D2DC", Offset = "0x1E092DC", VA = "0x1E0D2DC")]
+	public void LoadCoinData()
+	{
+	}
+
+	// Token: 0x06000C53 RID: 3155 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C53")]
+	[Address(RVA = "0x1E0E8B4", Offset = "0x1E0A8B4", VA = "0x1E0E8B4")]
+	public void SaveBoosterData()
+	{
+	}
+
+	// Token: 0x06000C54 RID: 3156 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C54")]
+	[Address(RVA = "0x1E0D344", Offset = "0x1E09344", VA = "0x1E0D344")]
+	private void LoadBoosterData()
+	{
+	}
+
+	// Token: 0x06000C55 RID: 3157 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C55")]
+	[Address(RVA = "0x1E0EEF4", Offset = "0x1E0AEF4", VA = "0x1E0EEF4")]
+	public void SaveOptionSound()
+	{
+	}
+
+	// Token: 0x06000C56 RID: 3158 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C56")]
+	[Address(RVA = "0x1E0D430", Offset = "0x1E09430", VA = "0x1E0D430")]
+	private void LoadOptionSound()
+	{
+	}
+
+	// Token: 0x06000C57 RID: 3159 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C57")]
+	[Address(RVA = "0x1E0D5D4", Offset = "0x1E095D4", VA = "0x1E0D5D4")]
+	private void LoadLocalScoreAndStarPoint()
+	{
+	}
+
+	// Token: 0x06000C58 RID: 3160 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C58")]
+	[Address(RVA = "0x1E0DE80", Offset = "0x1E09E80", VA = "0x1E0DE80")]
+	private void SaveLocalScoreAndStarPoint()
+	{
+	}
+
+	// Token: 0x06000C59 RID: 3161 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C59")]
+	[Address(RVA = "0x1E0EFA8", Offset = "0x1E0AFA8", VA = "0x1E0EFA8")]
+	public void NextFunc()
+	{
+	}
+
+	// Token: 0x06000C5A RID: 3162 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C5A")]
+	[Address(RVA = "0x1E0F18C", Offset = "0x1E0B18C", VA = "0x1E0F18C")]
+	public void SaveCurrentLevel()
+	{
+	}
+
+	// Token: 0x06000C5B RID: 3163 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000C5B")]
+	[Address(RVA = "0x1E0F20C", Offset = "0x1E0B20C", VA = "0x1E0F20C")]
+	public PlayerDataManager()
+	{
+	}
+
+	// Token: 0x04000BFB RID: 3067
+	[Token(Token = "0x4000BFB")]
+	[FieldOffset(Offset = "0x20")]
+	public int lastLevelStreakFailCount;
+
+	// Token: 0x04000BFC RID: 3068
+	[Token(Token = "0x4000BFC")]
+	[FieldOffset(Offset = "0x24")]
+	public int adsCount;
+
+	// Token: 0x04000BFD RID: 3069
+	[Token(Token = "0x4000BFD")]
+	[FieldOffset(Offset = "0x0")]
+	public static int sequenceWinCount;
+
+	// Token: 0x04000BFE RID: 3070
+	[Token(Token = "0x4000BFE")]
+	[FieldOffset(Offset = "0x4")]
+	public static readonly int DefaultBoosterCount;
+
+	// Token: 0x04000BFF RID: 3071
+	[Token(Token = "0x4000BFF")]
+	[FieldOffset(Offset = "0x28")]
+	public SystemLanguage SystemLanguage;
+
+	// Token: 0x04000C00 RID: 3072
+	[Token(Token = "0x4000C00")]
+	[FieldOffset(Offset = "0x30")]
+	public Dictionary<int, List<int>> dicBoosterItemList;
+
+	// Token: 0x04000C01 RID: 3073
+	[Token(Token = "0x4000C01")]
+	[FieldOffset(Offset = "0x38")]
+	public Dictionary<int, int> dicPlayedLevelScore;
+
+	// Token: 0x04000C02 RID: 3074
+	[Token(Token = "0x4000C02")]
+	[FieldOffset(Offset = "0x40")]
+	public Dictionary<int, int> dicPlayedLevelStarPoint;
+
+	// Token: 0x04000C03 RID: 3075
+	[Token(Token = "0x4000C03")]
+	[FieldOffset(Offset = "0x48")]
+	public int lastPlayedLevel;
+
+	// Token: 0x04000C04 RID: 3076
+	[Token(Token = "0x4000C04")]
+	[FieldOffset(Offset = "0x4C")]
+	public bool IsFirstAppInstall;
+
+	// Token: 0x04000C05 RID: 3077
+	[Token(Token = "0x4000C05")]
+	[FieldOffset(Offset = "0x50")]
+	public DateTime lastLoginDateTime;
+
+	// Token: 0x04000C06 RID: 3078
+	[Token(Token = "0x4000C06")]
+	[FieldOffset(Offset = "0x58")]
+	[NonSerialized]
+	public Booster.BoosterType[] enableBoosterIndexes;
+
+	// Token: 0x04000C07 RID: 3079
+	[Token(Token = "0x4000C07")]
+	[FieldOffset(Offset = "0x60")]
+	public ButtonBooster boosterBtn;
+
+	// Token: 0x04000C08 RID: 3080
+	[Token(Token = "0x4000C08")]
+	[FieldOffset(Offset = "0x68")]
+	public int LastPlayedUnixTime;
+
+	// Token: 0x04000C09 RID: 3081
+	[Token(Token = "0x4000C09")]
+	[FieldOffset(Offset = "0x6C")]
+	public bool IsFirstPlayer;
+
+	// Token: 0x04000C0A RID: 3082
+	[Token(Token = "0x4000C0A")]
+	[FieldOffset(Offset = "0x6D")]
+	public bool IsFirstSession;
+
+	// Token: 0x04000C0B RID: 3083
+	[Token(Token = "0x4000C0B")]
+	[FieldOffset(Offset = "0x6E")]
+	public bool IsIPad;
+
+	// Token: 0x04000C0C RID: 3084
+	[Token(Token = "0x4000C0C")]
+	[FieldOffset(Offset = "0x6F")]
+	public bool cheatSuperPower;
+
+	// Token: 0x04000C0D RID: 3085
+	[Token(Token = "0x4000C0D")]
+	[FieldOffset(Offset = "0x70")]
+	public bool CanIGetLogSortingOrder;
+
+	// Token: 0x04000C0E RID: 3086
+	[Token(Token = "0x4000C0E")]
+	[FieldOffset(Offset = "0x8")]
+	public static int firstGameLaunchTick;
+
+	// Token: 0x04000C0F RID: 3087
+	[Token(Token = "0x4000C0F")]
+	[FieldOffset(Offset = "0x78")]
+	public DateTime lastRecvDailyBonusDateTime;
+
+	// Token: 0x04000C10 RID: 3088
+	[Token(Token = "0x4000C10")]
+	[FieldOffset(Offset = "0x10")]
+	private static string deviceID;
+
+	// Token: 0x04000C11 RID: 3089
+	[Token(Token = "0x4000C11")]
+	[FieldOffset(Offset = "0x80")]
+	public int addedStarCount;
+
+	// Token: 0x04000C12 RID: 3090
+	[Token(Token = "0x4000C12")]
+	[FieldOffset(Offset = "0x84")]
+	public bool isNewClear;
+
+	// Token: 0x04000C13 RID: 3091
+	[Token(Token = "0x4000C13")]
+	[FieldOffset(Offset = "0x88")]
+	private readonly StringBuilder strBuilder;
+
+	// Token: 0x04000C14 RID: 3092
+	[Token(Token = "0x4000C14")]
+	[FieldOffset(Offset = "0x90")]
+	public int PayCount;
+
+	// Token: 0x04000C15 RID: 3093
+	[Token(Token = "0x4000C15")]
+	[FieldOffset(Offset = "0x94")]
+	public float PayTotalDollar;
+
+	// Token: 0x04000C16 RID: 3094
+	[Token(Token = "0x4000C16")]
+	[FieldOffset(Offset = "0x98")]
+	public int LastPayUnixTimeStamp;
+
+	// Token: 0x04000C17 RID: 3095
+	[Token(Token = "0x4000C17")]
+	[FieldOffset(Offset = "0x9C")]
+	public bool EnabledDoubleShopCoin;
+
+	// Token: 0x04000C18 RID: 3096
+	[Token(Token = "0x4000C18")]
+	[FieldOffset(Offset = "0x18")]
+	private static readonly string KEY_DEVICE_ID;
+
+	// Token: 0x04000C19 RID: 3097
+	[Token(Token = "0x4000C19")]
+	[FieldOffset(Offset = "0xA0")]
+	private readonly string KEY_HEADER_BOOSTER;
+
+	// Token: 0x04000C1A RID: 3098
+	[Token(Token = "0x4000C1A")]
+	[FieldOffset(Offset = "0xA8")]
+	private readonly string KEY_LEVEL;
+
+	// Token: 0x04000C1B RID: 3099
+	[Token(Token = "0x4000C1B")]
+	[FieldOffset(Offset = "0xB0")]
+	private readonly string KEY_OPTION_SOUND_BGM;
+
+	// Token: 0x04000C1C RID: 3100
+	[Token(Token = "0x4000C1C")]
+	[FieldOffset(Offset = "0xB8")]
+	private readonly string KEY_OPTION_SOUND_EFFECT;
+
+	// Token: 0x04000C1D RID: 3101
+	[Token(Token = "0x4000C1D")]
+	[FieldOffset(Offset = "0xC0")]
+	private readonly string KEY_HEADER_LEVEL_SCORE;
+
+	// Token: 0x04000C1E RID: 3102
+	[Token(Token = "0x4000C1E")]
+	[FieldOffset(Offset = "0xC8")]
+	private readonly string KEY_HEADER_LEVEL_STAR;
+
+	// Token: 0x04000C1F RID: 3103
+	[Token(Token = "0x4000C1F")]
+	[FieldOffset(Offset = "0xD0")]
+	private readonly string KEY_HEADER_ALL_CLEAR_LEVEL_TAG;
+
+	// Token: 0x04000C20 RID: 3104
+	[Token(Token = "0x4000C20")]
+	[FieldOffset(Offset = "0xD8")]
+	private readonly string KEY_COIN;
+
+	// Token: 0x04000C21 RID: 3105
+	[Token(Token = "0x4000C21")]
+	[FieldOffset(Offset = "0xE0")]
+	private readonly string KEY_SPIN;
+
+	// Token: 0x04000C22 RID: 3106
+	[Token(Token = "0x4000C22")]
+	[FieldOffset(Offset = "0xE8")]
+	public bool AllLevelCleared;
+
+	// Token: 0x04000C23 RID: 3107
+	[Token(Token = "0x4000C23")]
+	[FieldOffset(Offset = "0xE9")]
+	public bool IsOnSoundBGM;
+
+	// Token: 0x04000C24 RID: 3108
+	[Token(Token = "0x4000C24")]
+	[FieldOffset(Offset = "0xEA")]
+	public bool IsOnSoundEffect;
+
+	// Token: 0x04000C25 RID: 3109
+	[Token(Token = "0x4000C25")]
+	[FieldOffset(Offset = "0xF0")]
+	[NonSerialized]
+	public ObscuredInt[] BoosterCount;
+
+	// Token: 0x04000C26 RID: 3110
+	[Token(Token = "0x4000C26")]
+	[FieldOffset(Offset = "0xF8")]
+	public ObscuredInt coin;
+}"
+
+-----------------------
+AppEventManager important code : 
+
+"using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using Il2CppDummyDll;
+
+// Token: 0x0200008D RID: 141
+[Token(Token = "0x200008D")]
+public class AppEventManager : MonoSingleton<AppEventManager>
+{
+	// Token: 0x06000385 RID: 901 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000385")]
+	[Address(RVA = "0x1C31844", Offset = "0x1C2D844", VA = "0x1C31844")]
+	private void Start()
+	{
+	}
+
+	// Token: 0x06000386 RID: 902 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000386")]
+	[Address(RVA = "0x1C31BD0", Offset = "0x1C2DBD0", VA = "0x1C31BD0")]
+	public void SendAppEventDailyPlayerStatus()
+	{
+	}
+
+	// Token: 0x06000387 RID: 903 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000387")]
+	[Address(RVA = "0x1C31E20", Offset = "0x1C2DE20", VA = "0x1C31E20")]
+	public void SendAppEventPlayerSessionStart(int durationHour, AppEventManager.SessionStartedAs sessionStartedAs)
+	{
+	}
+
+	// Token: 0x06000388 RID: 904 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000388")]
+	[Address(RVA = "0x1C323C8", Offset = "0x1C2E3C8", VA = "0x1C323C8")]
+	public void SendAppEventPlayerADSource()
+	{
+	}
+
+	// Token: 0x06000389 RID: 905 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000389")]
+	[Address(RVA = "0x1C324C0", Offset = "0x1C2E4C0", VA = "0x1C324C0")]
+	public void SendAppEventMovePackPurchased(Booster.BoosterType type, int gid, int movePackPriceCoin, int continueCount, int userCoinBefore, int userCoinAfter, int[] countOfEachTargetRemainCount)
+	{
+	}
+
+	// Token: 0x0600038A RID: 906 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600038A")]
+	[Address(RVA = "0x1C32B10", Offset = "0x1C2EB10", VA = "0x1C32B10")]
+	public void SendAppEventFreeMovePackPurchased(int gid, int moveCount, int userCoinBefore, AppEventManager.FreeMovePackPurchasedBy purchasedBy)
+	{
+	}
+
+	// Token: 0x0600038B RID: 907 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600038B")]
+	[Address(RVA = "0x1C32D6C", Offset = "0x1C2ED6C", VA = "0x1C32D6C")]
+	public void SendAppEventLoginWithFacebook()
+	{
+	}
+
+	// Token: 0x0600038C RID: 908 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600038C")]
+	[Address(RVA = "0x1C330F8", Offset = "0x1C2F0F8", VA = "0x1C330F8")]
+	public void SendAppEventLevelStart(int gid, int prevPlayCount, int prevClearCount, int prevFailCount, int prevStar, int prevHighScore)
+	{
+	}
+
+	// Token: 0x0600038D RID: 909 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600038D")]
+	[Address(RVA = "0x1C33400", Offset = "0x1C2F400", VA = "0x1C33400")]
+	public void SendAppEventLevelClear(int gid, int getStarCount, int getScore, int remainMoveCount)
+	{
+	}
+
+	// Token: 0x0600038E RID: 910 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600038E")]
+	[Address(RVA = "0x1C33AB8", Offset = "0x1C2FAB8", VA = "0x1C33AB8")]
+	public void SendAppEventPopupLevelCleared()
+	{
+	}
+
+	// Token: 0x0600038F RID: 911 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600038F")]
+	[Address(RVA = "0x1C33D14", Offset = "0x1C2FD14", VA = "0x1C33D14")]
+	public void SendAppEventLevelFail(int gid, int getStarCount, int getScore, int remainMoveCount, int[] countOfEachTargetRemainCount)
+	{
+	}
+
+	// Token: 0x06000390 RID: 912 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000390")]
+	[Address(RVA = "0x1C342F8", Offset = "0x1C302F8", VA = "0x1C342F8")]
+	public void SendAppEventLevelClearScore(int gid, int getStarCount, int getScore, int remainMoveCount)
+	{
+	}
+
+	// Token: 0x06000391 RID: 913 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000391")]
+	[Address(RVA = "0x1C34890", Offset = "0x1C30890", VA = "0x1C34890")]
+	public void SendAppEventLevelResetWithoutUsingMove(int gid)
+	{
+	}
+
+	// Token: 0x06000392 RID: 914 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000392")]
+	[Address(RVA = "0x1C34A64", Offset = "0x1C30A64", VA = "0x1C34A64")]
+	public void SendAppEventCoinPurchased(int gid, int userCoinBefore, int getCoin, int listIndexByPosition, float priceDollar)
+	{
+	}
+
+	// Token: 0x06000393 RID: 915 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000393")]
+	[Address(RVA = "0x1C34E64", Offset = "0x1C30E64", VA = "0x1C34E64")]
+	public void SendAppEventPurchased(int gid, int userCoinBefore, int getCoin, int listIndexByPosition, float priceDollar)
+	{
+	}
+
+	// Token: 0x06000394 RID: 916 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000394")]
+	[Address(RVA = "0x1C35204", Offset = "0x1C31204", VA = "0x1C35204")]
+	public void SendAppEventCoinEarned(int gid, int userCoinBefore, int getCoin, int userCoinAfter, AppEventManager.ItemEarnedBy rewardEarnedBy)
+	{
+	}
+
+	// Token: 0x06000395 RID: 917 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000395")]
+	[Address(RVA = "0x1C35498", Offset = "0x1C31498", VA = "0x1C35498")]
+	public void SendAppEventCoinConsumed(int usedCoin, int gid, int userCoinBefore, int userCoinAfter, AppEventManager.CoinCategory byWhere, string specific_type, int iid)
+	{
+	}
+
+	// Token: 0x06000396 RID: 918 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000396")]
+	[Address(RVA = "0x1C35908", Offset = "0x1C31908", VA = "0x1C35908")]
+	public void SendAppEventGetPermissionFriendList(AppEventManager.GetPermissionActionType actionType)
+	{
+	}
+
+	// Token: 0x06000397 RID: 919 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000397")]
+	[Address(RVA = "0x1C35B0C", Offset = "0x1C31B0C", VA = "0x1C35B0C")]
+	public void SendAppEventGetPermissionPublish(AppEventManager.GetPermissionActionType actionType)
+	{
+	}
+
+	// Token: 0x06000398 RID: 920 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000398")]
+	[Address(RVA = "0x1C35CF0", Offset = "0x1C31CF0", VA = "0x1C35CF0")]
+	public void SendAppEventInGameItemUsed(int gid, int price, int prevNumOfItem, Booster.BoosterType itemType, int givenMoveCount, int remainMoveCount, int[] countOfEachTargetRemainCount)
+	{
+	}
+
+	// Token: 0x06000399 RID: 921 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000399")]
+	[Address(RVA = "0x1C36188", Offset = "0x1C32188", VA = "0x1C36188")]
+	public void SendAppEventInGameItemEarned(Booster.BoosterType itemType, AppEventManager.ItemEarnedBy earnedBy, int NumOfEarnedItem, int price, int prevNumOfItem)
+	{
+	}
+
+	// Token: 0x0600039A RID: 922 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600039A")]
+	[Address(RVA = "0x1C363E8", Offset = "0x1C323E8", VA = "0x1C363E8")]
+	public void SendAppEventFreeInGameItemUsed(int gid, int prevNumOfItem, Booster.BoosterType itemType, int givenMoveCount, int remainMoveCount, int[] countOfEachTargetRemainCount)
+	{
+	}
+
+	// Token: 0x0600039B RID: 923 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600039B")]
+	[Address(RVA = "0x1C36690", Offset = "0x1C32690", VA = "0x1C36690")]
+	public void SendAppEventFirstTimePurchase(int gid, int userCoinBefore, int getCoin, int listIndexByPosition, float priceDollar, int iid)
+	{
+	}
+
+	// Token: 0x0600039C RID: 924 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600039C")]
+	[Address(RVA = "0x1C36A9C", Offset = "0x1C32A9C", VA = "0x1C36A9C")]
+	public void SendAppEventFirstTimeLevelFailed(int gid)
+	{
+	}
+
+	// Token: 0x0600039D RID: 925 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600039D")]
+	[Address(RVA = "0x1C36C5C", Offset = "0x1C32C5C", VA = "0x1C36C5C")]
+	public void SendAppEventFirstTimeNoMoreLives(int gid)
+	{
+	}
+
+	// Token: 0x0600039E RID: 926 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600039E")]
+	[Address(RVA = "0x1C36EE8", Offset = "0x1C32EE8", VA = "0x1C36EE8")]
+	public void SendAppEventLifeEarned(int getLife, AppEventManager.ItemEarnedBy earnedBy)
+	{
+	}
+
+	// Token: 0x0600039F RID: 927 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x600039F")]
+	[Address(RVA = "0x1C370C8", Offset = "0x1C330C8", VA = "0x1C370C8")]
+	public void SendAppEventLifeConsumed(AppEventManager.PlayerAction playerAction, int gid)
+	{
+	}
+
+	// Token: 0x060003A0 RID: 928 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A0")]
+	[Address(RVA = "0x1C37270", Offset = "0x1C33270", VA = "0x1C37270")]
+	public void SendAppEventLifePurchased(int getLife, int userCoinBefore, int price, int lastPlayedLevel)
+	{
+	}
+
+	// Token: 0x060003A1 RID: 929 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A1")]
+	[Address(RVA = "0x1C37598", Offset = "0x1C33598", VA = "0x1C37598")]
+	public void SendAppEventLifeNoMoreLives(int lastPlayedLevel)
+	{
+	}
+
+	// Token: 0x060003A2 RID: 930 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A2")]
+	[Address(RVA = "0x1C37784", Offset = "0x1C33784", VA = "0x1C37784")]
+	public void SendAppEventLifeRequestToFriends(int requestCount, int requestAvailableCount, int isAll, bool isManualSelect)
+	{
+	}
+
+	// Token: 0x060003A3 RID: 931 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A3")]
+	[Address(RVA = "0x1C37AB8", Offset = "0x1C33AB8", VA = "0x1C37AB8")]
+	public void SendAppEventLifeSendSent(int sentCount, int sentAvailableCount, int isCheckAll)
+	{
+	}
+
+	// Token: 0x060003A4 RID: 932 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A4")]
+	[Address(RVA = "0x1C37DD4", Offset = "0x1C33DD4", VA = "0x1C37DD4")]
+	public void SendAppEventTimeSpent(SceneType sceneTypeWhere, int gid)
+	{
+	}
+
+	// Token: 0x060003A5 RID: 933 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A5")]
+	[Address(RVA = "0x1C38140", Offset = "0x1C34140", VA = "0x1C38140")]
+	public void SendAppEventPurchaseFunnelConversionRate(AppEventManager.PurchaseTypeOfPopup popupType, AppEventManager.PurchaseReachedStep step, int userCoinBefore, int listIndexByPosition, float priceDollar, int popupOpenDurationTimeSec)
+	{
+	}
+
+	// Token: 0x060003A6 RID: 934 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A6")]
+	[Address(RVA = "0x1C384E4", Offset = "0x1C344E4", VA = "0x1C384E4")]
+	public void SendAppEventPurchaseFunnelPopupShown(AppEventManager.PurchaseTypeOfPopup popupType)
+	{
+	}
+
+	// Token: 0x060003A7 RID: 935 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A7")]
+	[Address(RVA = "0x1C38740", Offset = "0x1C34740", VA = "0x1C38740")]
+	public void SendAppEventPurchaseFunnelButtonClicked(AppEventManager.PurchaseTypeOfPopup popupType, int listIndexByPosition, float priceDollar, int popupOpenDurationTimeSec)
+	{
+	}
+
+	// Token: 0x060003A8 RID: 936 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A8")]
+	[Address(RVA = "0x1C38A60", Offset = "0x1C34A60", VA = "0x1C38A60")]
+	public void SendAppEventPurchaseFunnelCanceled(AppEventManager.PurchaseTypeOfPopup popupType, int listIndexByPosition, float priceDollar, int popupOpenDurationTimeSec)
+	{
+	}
+
+	// Token: 0x060003A9 RID: 937 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003A9")]
+	[Address(RVA = "0x1C38D80", Offset = "0x1C34D80", VA = "0x1C38D80")]
+	public void SendAppEventPurchaseFunnelConfirmed(AppEventManager.PurchaseTypeOfPopup popupType, int userCoinBefore, int listIndexByPosition, float priceDollar, int popupOpenDurationTimeSec)
+	{
+	}
+
+	// Token: 0x060003AA RID: 938 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003AA")]
+	[Address(RVA = "0x1C39080", Offset = "0x1C35080", VA = "0x1C39080")]
+	public void SendAppEventCreateSpecialBlock(int gid, bool isClearStage)
+	{
+	}
+
+	// Token: 0x060003AB RID: 939 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003AB")]
+	[Address(RVA = "0x1C392CC", Offset = "0x1C352CC", VA = "0x1C392CC")]
+	public void SendAppEventMISCWorldMapObjectClicked(int episodeNo, string clickedObjectName)
+	{
+	}
+
+	// Token: 0x060003AC RID: 940 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003AC")]
+	[Address(RVA = "0x1C39444", Offset = "0x1C35444", VA = "0x1C39444")]
+	public void SendAppEventMISCUnMatchedMove(GameFailResultReason resultReason, int gid)
+	{
+	}
+
+	// Token: 0x060003AD RID: 941 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003AD")]
+	[Address(RVA = "0x1C39744", Offset = "0x1C35744", VA = "0x1C39744")]
+	public void SendAppEventShuffleOccurred(int gid, bool isClearStage, int shuffleCount)
+	{
+	}
+
+	// Token: 0x060003AE RID: 942 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003AE")]
+	[Address(RVA = "0x1C39A08", Offset = "0x1C35A08", VA = "0x1C39A08")]
+	public void SendAppEventMISCUseIOSShortcutItemMenu(int shortCutIndex)
+	{
+	}
+
+	// Token: 0x060003AF RID: 943 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003AF")]
+	[Address(RVA = "0x1C39B88", Offset = "0x1C35B88", VA = "0x1C39B88")]
+	public void SendAppEventMISCExceptionGretelsTreeTutorial()
+	{
+	}
+
+	// Token: 0x060003B0 RID: 944 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003B0")]
+	[Address(RVA = "0x1C39C80", Offset = "0x1C35C80", VA = "0x1C39C80")]
+	public void SendAppEventMISCUpdatePopup(bool DidPushUpdateButton)
+	{
+	}
+
+	// Token: 0x060003B1 RID: 945 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003B1")]
+	[Address(RVA = "0x1C39EBC", Offset = "0x1C35EBC", VA = "0x1C39EBC")]
+	public void SendAppEventMISCUnexpectedRewardItem(int rewardItemIndex, AppEventManager.ItemEarnedBy earnedBy)
+	{
+	}
+
+	// Token: 0x060003B2 RID: 946 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003B2")]
+	[Address(RVA = "0x1C3A0CC", Offset = "0x1C360CC", VA = "0x1C3A0CC")]
+	public void SendAppEventMISCOfflinePlayOccured(int playOfflineCount)
+	{
+	}
+
+	// Token: 0x060003B3 RID: 947 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003B3")]
+	[Address(RVA = "0x1C3A258", Offset = "0x1C36258", VA = "0x1C3A258")]
+	public void SendAppEventCookappsCrossPromotionConversionRate(bool isClose, string accessBy)
+	{
+	}
+
+	// Token: 0x060003B4 RID: 948 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003B4")]
+	[Address(RVA = "0x1C3A4E4", Offset = "0x1C364E4", VA = "0x1C3A4E4")]
+	public void SendAppEventMISCUpdateSlideConversionRate(bool DidUpdate, string storeVersion)
+	{
+	}
+
+	// Token: 0x060003B5 RID: 949 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003B5")]
+	[Address(RVA = "0x1C3A6D0", Offset = "0x1C366D0", VA = "0x1C3A6D0")]
+	public void SendAppEventMISCTryToQuitByBackButton()
+	{
+	}
+
+	// Token: 0x060003B6 RID: 950 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003B6")]
+	[Address(RVA = "0x1C3A7C8", Offset = "0x1C367C8", VA = "0x1C3A7C8")]
+	public void SendAppEventMISCPlayerRespondToQuitPopup(string respond)
+	{
+	}
+
+	// Token: 0x060003B7 RID: 951 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60003B7")]
+	[Address(RVA = "0x1C321E0", Offset = "0x1C2E1E0", VA = "0x1C321E0")]
+	private string GetLogTypeString(string enumString)
+	{
+		return null;
+	}
+
+	// Token: 0x060003B8 RID: 952 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60003B8")]
+	[Address(RVA = "0x1C307DC", Offset = "0x1C2C7DC", VA = "0x1C307DC")]
+	public string GetLevelPlayType(int gid)
+	{
+		return null;
+	}
+
+	// Token: 0x060003B9 RID: 953 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60003B9")]
+	[Address(RVA = "0x1C35828", Offset = "0x1C31828", VA = "0x1C35828")]
+	public string GetLevelPlayTypeWithoutMapDataMain(int gid)
+	{
+		return null;
+	}
+
+	// Token: 0x060003BA RID: 954 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003BA")]
+	[Address(RVA = "0x1C3A990", Offset = "0x1C36990", VA = "0x1C3A990")]
+	public void SendAppEventPushRemoteNoti(string pushId, string title, string message, Dictionary<string, string> dict)
+	{
+	}
+
+	// Token: 0x060003BB RID: 955 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003BB")]
+	[Address(RVA = "0x1C3AE14", Offset = "0x1C36E14", VA = "0x1C3AE14")]
+	public void SendAppEventPushNoti(int index, string message)
+	{
+	}
+
+	// Token: 0x060003BC RID: 956 RVA: 0x00002050 File Offset: 0x00000250
+	[Token(Token = "0x60003BC")]
+	[Address(RVA = "0x1C3AFD0", Offset = "0x1C36FD0", VA = "0x1C3AFD0")]
+	private string GetLocalNotiPushID(int index)
+	{
+		return null;
+	}
+
+	// Token: 0x060003BD RID: 957 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003BD")]
+	[Address(RVA = "0x1C31E1C", Offset = "0x1C2DE1C", VA = "0x1C31E1C")]
+	public void SendAppEvent(string appEventName, [Optional] float? valueToSum, [Optional] Dictionary<string, object> parameters)
+	{
+	}
+
+	// Token: 0x060003BE RID: 958 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003BE")]
+	[Address(RVA = "0x1C3B14C", Offset = "0x1C3714C", VA = "0x1C3B14C")]
+	private static void SendAppEventToCookappsGamesLogger(string eventName, Dictionary<string, object> dicParam, [Optional] float? valueToSum)
+	{
+	}
+
+	// Token: 0x060003BF RID: 959 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003BF")]
+	[Address(RVA = "0x1C3B150", Offset = "0x1C37150", VA = "0x1C3B150")]
+	private static void SendAppEventToCookappsGamesLogger(Dictionary<string, string> formatForSending)
+	{
+	}
+
+	// Token: 0x060003C0 RID: 960 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C0")]
+	[Address(RVA = "0x1C32110", Offset = "0x1C2E110", VA = "0x1C32110")]
+	private void CheckCheater()
+	{
+	}
+
+	// Token: 0x060003C1 RID: 961 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C1")]
+	[Address(RVA = "0x1C3B154", Offset = "0x1C37154", VA = "0x1C3B154")]
+	public void SendAppEventAdCompleted(int beforeLife, int beforeCoin, AdRewardType adRewardType, int rewardCount, AppEventManager.AdAccessedBy adAccessedBy)
+	{
+	}
+
+	// Token: 0x060003C2 RID: 962 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C2")]
+	[Address(RVA = "0x1C3B6AC", Offset = "0x1C376AC", VA = "0x1C3B6AC")]
+	public void SendAppEventAdWatchingFunnel(AppEventManager.AdCompletedStepReached step, int popupOpenDurationTimeSec, int beforeLife, int beforeCoin, AdRewardType adRewardType = AdRewardType.Life, int rewardCount = 1, AppEventManager.AdAccessedBy adAccessedBy = AppEventManager.AdAccessedBy.Life_Icon_from_Lobby)
+	{
+	}
+
+	// Token: 0x060003C3 RID: 963 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C3")]
+	[Address(RVA = "0x1C3BD28", Offset = "0x1C37D28", VA = "0x1C3BD28")]
+	public void SendAppEventShowIntetstitialAD(AppEventManager.AdAccessedBy adAccessedBy)
+	{
+	}
+
+	// Token: 0x060003C4 RID: 964 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C4")]
+	[Address(RVA = "0x1C3BEAC", Offset = "0x1C37EAC", VA = "0x1C3BEAC")]
+	public void SendAppEventPreBoosterUsed(int gid, int boosterTypeIndex)
+	{
+	}
+
+	// Token: 0x060003C5 RID: 965 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C5")]
+	[Address(RVA = "0x1C3C074", Offset = "0x1C38074", VA = "0x1C3C074")]
+	public void SendAppEventPreBoosterPurchased(int gid, string boosterType)
+	{
+	}
+
+	// Token: 0x060003C6 RID: 966 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C6")]
+	[Address(RVA = "0x1C3C1D0", Offset = "0x1C381D0", VA = "0x1C3C1D0")]
+	public void SendAppEventPreBoosterBuyAndStock()
+	{
+	}
+
+	// Token: 0x060003C7 RID: 967 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C7")]
+	[Address(RVA = "0x1C3C22C", Offset = "0x1C3822C", VA = "0x1C3C22C")]
+	public void SendAppEventLevelRatingAnswer(int gid, bool isGood, int getStar)
+	{
+	}
+
+	// Token: 0x060003C8 RID: 968 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C8")]
+	[Address(RVA = "0x1C3C454", Offset = "0x1C38454", VA = "0x1C3C454")]
+	public void SendAppEventLevelRatingConversionRate(int gid, bool isRespond, int getStar)
+	{
+	}
+
+	// Token: 0x060003C9 RID: 969 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003C9")]
+	[Address(RVA = "0x1C3C67C", Offset = "0x1C3867C", VA = "0x1C3C67C")]
+	public void AppsFlyerAppEvent(string eventName, Dictionary<string, string> eventValue)
+	{
+	}
+
+	// Token: 0x060003CA RID: 970 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003CA")]
+	[Address(RVA = "0x1C3C680", Offset = "0x1C38680", VA = "0x1C3C680")]
+	public void SendAppEventDailySpinBonusCollected(bool isAutoPopup, int spinIndex, int iid, int rewardValue)
+	{
+	}
+
+	// Token: 0x060003CB RID: 971 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003CB")]
+	[Address(RVA = "0x1C3CA38", Offset = "0x1C38A38", VA = "0x1C3CA38")]
+	public void SendAppEventRandomBoxResult(int howManyBoxesOpened)
+	{
+	}
+
+	// Token: 0x060003CC RID: 972 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003CC")]
+	[Address(RVA = "0x1C3CBD0", Offset = "0x1C38BD0", VA = "0x1C3CBD0")]
+	public void SendAppEventRandomBoxClosedByX()
+	{
+	}
+
+	// Token: 0x060003CD RID: 973 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x60003CD")]
+	[Address(RVA = "0x1C3CCC8", Offset = "0x1C38CC8", VA = "0x1C3CCC8")]
+	public AppEventManager()
+	{
+	}
+
+	// Token: 0x040002F7 RID: 759
+	[Token(Token = "0x40002F7")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x20")]
+	public bool isCheater;
+
+	// Token: 0x040002F8 RID: 760
+	[Token(Token = "0x40002F8")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x0")]
+	private static readonly string appName;
+
+	// Token: 0x040002F9 RID: 761
+	[Token(Token = "0x40002F9")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x24")]
+	public int startTimeAfterLogin;
+
+	// Token: 0x040002FA RID: 762
+	[Token(Token = "0x40002FA")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x8")]
+	public static AppEventTempBox m_TempBox;
+
+	// Token: 0x040002FB RID: 763
+	[Token(Token = "0x40002FB")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x28")]
+	private readonly Dictionary<int, string> IntialLaunchFunnel_Steps_Dic;
+
+	// Token: 0x040002FC RID: 764
+	[Token(Token = "0x40002FC")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x30")]
+	private DateTime timeLastStep;
+
+	// Token: 0x040002FD RID: 765
+	[Token(Token = "0x40002FD")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x38")]
+	public List<string> pastStep;
+
+	// Token: 0x040002FE RID: 766
+	[Token(Token = "0x40002FE")]
+	[Il2CppDummyDll.FieldOffset(Offset = "0x40")]
+	public Dictionary<int, int> tryCount;
+
+	// Token: 0x0200008E RID: 142
+	[Token(Token = "0x200008E")]
+	public enum InitialLaunchFunnelParameter
+	{
+		// Token: 0x04000300 RID: 768
+		[Token(Token = "0x4000300")]
+		Null,
+		// Token: 0x04000301 RID: 769
+		[Token(Token = "0x4000301")]
+		Guest,
+		// Token: 0x04000302 RID: 770
+		[Token(Token = "0x4000302")]
+		Facebook,
+		// Token: 0x04000303 RID: 771
+		[Token(Token = "0x4000303")]
+		Level,
+		// Token: 0x04000304 RID: 772
+		[Token(Token = "0x4000304")]
+		StepValue,
+		// Token: 0x04000305 RID: 773
+		[Token(Token = "0x4000305")]
+		Automatic,
+		// Token: 0x04000306 RID: 774
+		[Token(Token = "0x4000306")]
+		Manual
+	}
+
+	// Token: 0x0200008F RID: 143
+	[Token(Token = "0x200008F")]
+	public enum InitialLaunchFunnelSteps
+	{
+		// Token: 0x04000308 RID: 776
+		[Token(Token = "0x4000308")]
+		_01AppLaunched,
+		// Token: 0x04000309 RID: 777
+		[Token(Token = "0x4000309")]
+		_02TitleScreenIsDisplayed,
+		// Token: 0x0400030A RID: 778
+		[Token(Token = "0x400030A")]
+		_03GameStartButtonClicked,
+		// Token: 0x0400030B RID: 779
+		[Token(Token = "0x400030B")]
+		_04LoadingResourcesFinished,
+		// Token: 0x0400030C RID: 780
+		[Token(Token = "0x400030C")]
+		_05PlayerEnteredFirstLevel,
+		// Token: 0x0400030D RID: 781
+		[Token(Token = "0x400030D")]
+		_05_1TutorialLevel1Finished,
+		// Token: 0x0400030E RID: 782
+		[Token(Token = "0x400030E")]
+		_05_2FirstLevelPlayFinished,
+		// Token: 0x0400030F RID: 783
+		[Token(Token = "0x400030F")]
+		_06Level2Cleared,
+		// Token: 0x04000310 RID: 784
+		[Token(Token = "0x4000310")]
+		_07Level3Cleared,
+		// Token: 0x04000311 RID: 785
+		[Token(Token = "0x4000311")]
+		_08Level4Cleared,
+		// Token: 0x04000312 RID: 786
+		[Token(Token = "0x4000312")]
+		_09Level5Cleared,
+		// Token: 0x04000313 RID: 787
+		[Token(Token = "0x4000313")]
+		_10_1Level6Cleared,
+		// Token: 0x04000314 RID: 788
+		[Token(Token = "0x4000314")]
+		_10TutorialLevel6Finished,
+		// Token: 0x04000315 RID: 789
+		[Token(Token = "0x4000315")]
+		_11Level7Cleared,
+		// Token: 0x04000316 RID: 790
+		[Token(Token = "0x4000316")]
+		_12Level8Cleared,
+		// Token: 0x04000317 RID: 791
+		[Token(Token = "0x4000317")]
+		_13TutorialLevel9Start,
+		// Token: 0x04000318 RID: 792
+		[Token(Token = "0x4000318")]
+		_13_1MagicHammerClicked_1,
+		// Token: 0x04000319 RID: 793
+		[Token(Token = "0x4000319")]
+		_13_2MagicHammerClicked_2,
+		// Token: 0x0400031A RID: 794
+		[Token(Token = "0x400031A")]
+		_13_3MagicHammerBuyed,
+		// Token: 0x0400031B RID: 795
+		[Token(Token = "0x400031B")]
+		_13_4MagicHammerClicked_3,
+		// Token: 0x0400031C RID: 796
+		[Token(Token = "0x400031C")]
+		_13_5MagicHammerUsed,
+		// Token: 0x0400031D RID: 797
+		[Token(Token = "0x400031D")]
+		_13_6MagicHammerClicked_4,
+		// Token: 0x0400031E RID: 798
+		[Token(Token = "0x400031E")]
+		_13_7MagicHammerClicked_5,
+		// Token: 0x0400031F RID: 799
+		[Token(Token = "0x400031F")]
+		_13_8Level9Cleared,
+		// Token: 0x04000320 RID: 800
+		[Token(Token = "0x4000320")]
+		_14Level10Cleared,
+		// Token: 0x04000321 RID: 801
+		[Token(Token = "0x4000321")]
+		_15TutorialLevel11Finished,
+		// Token: 0x04000322 RID: 802
+		[Token(Token = "0x4000322")]
+		_15_1Level11Cleared,
+		// Token: 0x04000323 RID: 803
+		[Token(Token = "0x4000323")]
+		_16TutorialLevel17Start,
+		// Token: 0x04000324 RID: 804
+		[Token(Token = "0x4000324")]
+		_16_1CandyCraneClicked_1,
+		// Token: 0x04000325 RID: 805
+		[Token(Token = "0x4000325")]
+		_16_2CandyCraneClicked_2,
+		// Token: 0x04000326 RID: 806
+		[Token(Token = "0x4000326")]
+		_16_3CandyCraneBuyed,
+		// Token: 0x04000327 RID: 807
+		[Token(Token = "0x4000327")]
+		_16_4CandyCraneClicked_3,
+		// Token: 0x04000328 RID: 808
+		[Token(Token = "0x4000328")]
+		_16_5MCandyCraneUsed,
+		// Token: 0x04000329 RID: 809
+		[Token(Token = "0x4000329")]
+		_16_6MCandyCraneUsed_2,
+		// Token: 0x0400032A RID: 810
+		[Token(Token = "0x400032A")]
+		_16_7CandyCraneClicked_4,
+		// Token: 0x0400032B RID: 811
+		[Token(Token = "0x400032B")]
+		_16_8CandyCraneClicked_5,
+		// Token: 0x0400032C RID: 812
+		[Token(Token = "0x400032C")]
+		_16_9Level17Cleared,
+		// Token: 0x0400032D RID: 813
+		[Token(Token = "0x400032D")]
+		_17TutorialLevel20Finished,
+		// Token: 0x0400032E RID: 814
+		[Token(Token = "0x400032E")]
+		_17_1Level20Cleared,
+		// Token: 0x0400032F RID: 815
+		[Token(Token = "0x400032F")]
+		_18TutorialLobbyLevel21Start,
+		// Token: 0x04000330 RID: 816
+		[Token(Token = "0x4000330")]
+		_18_1TutorialFreeCoinClicked,
+		// Token: 0x04000331 RID: 817
+		[Token(Token = "0x4000331")]
+		_18_2TutorialFreeCoinClicked_2,
+		// Token: 0x04000332 RID: 818
+		[Token(Token = "0x4000332")]
+		_18_3TutorialFreeCoinBuyed,
+		// Token: 0x04000333 RID: 819
+		[Token(Token = "0x4000333")]
+		_18_4TutorialFreeCoinCleared,
+		// Token: 0x04000334 RID: 820
+		[Token(Token = "0x4000334")]
+		_19TutorialLevel30Finished,
+		// Token: 0x04000335 RID: 821
+		[Token(Token = "0x4000335")]
+		_19_1Level30Cleared,
+		// Token: 0x04000336 RID: 822
+		[Token(Token = "0x4000336")]
+		_20_RatingStart,
+		// Token: 0x04000337 RID: 823
+		[Token(Token = "0x4000337")]
+		_20_1RatingCleared,
+		// Token: 0x04000338 RID: 824
+		[Token(Token = "0x4000338")]
+		_21TutorialLevel32Start,
+		// Token: 0x04000339 RID: 825
+		[Token(Token = "0x4000339")]
+		_21_1CandyPackClicked_1,
+		// Token: 0x0400033A RID: 826
+		[Token(Token = "0x400033A")]
+		_21_2CandyPackClicked_2,
+		// Token: 0x0400033B RID: 827
+		[Token(Token = "0x400033B")]
+		_21_3CandyPackBuyed,
+		// Token: 0x0400033C RID: 828
+		[Token(Token = "0x400033C")]
+		_21_4CandyPackClicked_3,
+		// Token: 0x0400033D RID: 829
+		[Token(Token = "0x400033D")]
+		_21_5CandyPackUsed,
+		// Token: 0x0400033E RID: 830
+		[Token(Token = "0x400033E")]
+		_21_6CandyPackClicked_4,
+		// Token: 0x0400033F RID: 831
+		[Token(Token = "0x400033F")]
+		_21_7CandyPackClicked_5,
+		// Token: 0x04000340 RID: 832
+		[Token(Token = "0x4000340")]
+		_21_8Level32Cleared,
+		// Token: 0x04000341 RID: 833
+		[Token(Token = "0x4000341")]
+		_22TutorialLevel33Finished,
+		// Token: 0x04000342 RID: 834
+		[Token(Token = "0x4000342")]
+		_22_1Level33Cleared,
+		// Token: 0x04000343 RID: 835
+		[Token(Token = "0x4000343")]
+		_23TutorialLevel34Start,
+		// Token: 0x04000344 RID: 836
+		[Token(Token = "0x4000344")]
+		_23_1PreBoosterClicked_1,
+		// Token: 0x04000345 RID: 837
+		[Token(Token = "0x4000345")]
+		_23_2PreBoosterClicked_2,
+		// Token: 0x04000346 RID: 838
+		[Token(Token = "0x4000346")]
+		_23_3Level34Cleared,
+		// Token: 0x04000347 RID: 839
+		[Token(Token = "0x4000347")]
+		_24TutorialLevel40Start,
+		// Token: 0x04000348 RID: 840
+		[Token(Token = "0x4000348")]
+		_24_1ShuffleClicked_1,
+		// Token: 0x04000349 RID: 841
+		[Token(Token = "0x4000349")]
+		_24_2ShuffleUsed,
+		// Token: 0x0400034A RID: 842
+		[Token(Token = "0x400034A")]
+		_24_3ShuffleCleared,
+		// Token: 0x0400034B RID: 843
+		[Token(Token = "0x400034B")]
+		_24_4Level40Cleared,
+		// Token: 0x0400034C RID: 844
+		[Token(Token = "0x400034C")]
+		_25TutorialLevel45Start,
+		// Token: 0x0400034D RID: 845
+		[Token(Token = "0x400034D")]
+		_25_1Level45Cleared,
+		// Token: 0x0400034E RID: 846
+		[Token(Token = "0x400034E")]
+		_81NoMoreLives,
+		// Token: 0x0400034F RID: 847
+		[Token(Token = "0x400034F")]
+		_89OldPlayerLoggedIntoFacebook,
+		// Token: 0x04000350 RID: 848
+		[Token(Token = "0x4000350")]
+		_89_1OldPlayerRestartAsAGuest,
+		// Token: 0x04000351 RID: 849
+		[Token(Token = "0x4000351")]
+		_90LevelCleared,
+		// Token: 0x04000352 RID: 850
+		[Token(Token = "0x4000352")]
+		_91LevelFailed
+	}
+
+	// Token: 0x02000090 RID: 144
+	[Token(Token = "0x2000090")]
+	public enum FacebookLoginFromWhere
+	{
+		// Token: 0x04000354 RID: 852
+		[Token(Token = "0x4000354")]
+		Auto_Popup__x__Cleared_Level_,
+		// Token: 0x04000355 RID: 853
+		[Token(Token = "0x4000355")]
+		Auto_Popup__x__No_More_Lives,
+		// Token: 0x04000356 RID: 854
+		[Token(Token = "0x4000356")]
+		Title_Screen,
+		// Token: 0x04000357 RID: 855
+		[Token(Token = "0x4000357")]
+		Message_Center,
+		// Token: 0x04000358 RID: 856
+		[Token(Token = "0x4000358")]
+		Heart_Request_Popup,
+		// Token: 0x04000359 RID: 857
+		[Token(Token = "0x4000359")]
+		Bonus_Level_Popup,
+		// Token: 0x0400035A RID: 858
+		[Token(Token = "0x400035A")]
+		Leader_Board__x__Game_Start_Popup,
+		// Token: 0x0400035B RID: 859
+		[Token(Token = "0x400035B")]
+		Leader_Board__x__Game_Result_Popup,
+		// Token: 0x0400035C RID: 860
+		[Token(Token = "0x400035C")]
+		Leader_Board__x__Lobby_Popup,
+		// Token: 0x0400035D RID: 861
+		[Token(Token = "0x400035D")]
+		Option_Popup,
+		// Token: 0x0400035E RID: 862
+		[Token(Token = "0x400035E")]
+		Get_Help_Request_Popup,
+		// Token: 0x0400035F RID: 863
+		[Token(Token = "0x400035F")]
+		ETC
+	}
+
+	// Token: 0x02000091 RID: 145
+	[Token(Token = "0x2000091")]
+	public enum SessionStartedAs
+	{
+		// Token: 0x04000361 RID: 865
+		[Token(Token = "0x4000361")]
+		Resumed,
+		// Token: 0x04000362 RID: 866
+		[Token(Token = "0x4000362")]
+		Relaunched,
+		// Token: 0x04000363 RID: 867
+		[Token(Token = "0x4000363")]
+		First_Launch
+	}
+
+	// Token: 0x02000092 RID: 146
+	[Token(Token = "0x2000092")]
+	public enum CoinCategory
+	{
+		// Token: 0x04000365 RID: 869
+		[Token(Token = "0x4000365")]
+		Null,
+		// Token: 0x04000366 RID: 870
+		[Token(Token = "0x4000366")]
+		InGameItem,
+		// Token: 0x04000367 RID: 871
+		[Token(Token = "0x4000367")]
+		Life,
+		// Token: 0x04000368 RID: 872
+		[Token(Token = "0x4000368")]
+		Move,
+		// Token: 0x04000369 RID: 873
+		[Token(Token = "0x4000369")]
+		DailySpin,
+		// Token: 0x0400036A RID: 874
+		[Token(Token = "0x400036A")]
+		PlayBonusGame,
+		// Token: 0x0400036B RID: 875
+		[Token(Token = "0x400036B")]
+		EventPopup,
+		// Token: 0x0400036C RID: 876
+		[Token(Token = "0x400036C")]
+		AutomaticPopup,
+		// Token: 0x0400036D RID: 877
+		[Token(Token = "0x400036D")]
+		PreBooster,
+		// Token: 0x0400036E RID: 878
+		[Token(Token = "0x400036E")]
+		DailyBonusLevel,
+		// Token: 0x0400036F RID: 879
+		[Token(Token = "0x400036F")]
+		RandomBox
+	}
+
+	// Token: 0x02000093 RID: 147
+	[Token(Token = "0x2000093")]
+	public enum CoinPurchasedProductType
+	{
+		// Token: 0x04000371 RID: 881
+		[Token(Token = "0x4000371")]
+		Regular_Coin_Pack,
+		// Token: 0x04000372 RID: 882
+		[Token(Token = "0x4000372")]
+		Starter_Pack_1,
+		// Token: 0x04000373 RID: 883
+		[Token(Token = "0x4000373")]
+		Cohort_Sale_Pack,
+		// Token: 0x04000374 RID: 884
+		[Token(Token = "0x4000374")]
+		Cohort_Bonus_Item_Pack,
+		// Token: 0x04000375 RID: 885
+		[Token(Token = "0x4000375")]
+		Unlimited_Life_Pack,
+		// Token: 0x04000376 RID: 886
+		[Token(Token = "0x4000376")]
+		Buyback_Pack,
+		// Token: 0x04000377 RID: 887
+		[Token(Token = "0x4000377")]
+		Ingame_Item_Pack,
+		// Token: 0x04000378 RID: 888
+		[Token(Token = "0x4000378")]
+		Push__x__1_More_Expensive_Proposal,
+		// Token: 0x04000379 RID: 889
+		[Token(Token = "0x4000379")]
+		Push__x__1_More_Ingame_Item_Pack,
+		// Token: 0x0400037A RID: 890
+		[Token(Token = "0x400037A")]
+		Push__x__1_Regular_Coin_Pack,
+		// Token: 0x0400037B RID: 891
+		[Token(Token = "0x400037B")]
+		Double_Coin_Pack,
+		// Token: 0x0400037C RID: 892
+		[Token(Token = "0x400037C")]
+		Step_Double_Coin_Pack,
+		// Token: 0x0400037D RID: 893
+		[Token(Token = "0x400037D")]
+		Super_Sale_Coin_Pack,
+		// Token: 0x0400037E RID: 894
+		[Token(Token = "0x400037E")]
+		BoosterPackBomb,
+		// Token: 0x0400037F RID: 895
+		[Token(Token = "0x400037F")]
+		BoosterPackHammer,
+		// Token: 0x04000380 RID: 896
+		[Token(Token = "0x4000380")]
+		BoosterPackHBomb,
+		// Token: 0x04000381 RID: 897
+		[Token(Token = "0x4000381")]
+		BoosterPackVBomb,
+		// Token: 0x04000382 RID: 898
+		[Token(Token = "0x4000382")]
+		BoosterPackBomb2,
+		// Token: 0x04000383 RID: 899
+		[Token(Token = "0x4000383")]
+		PeriodEventChristmasPack,
+		// Token: 0x04000384 RID: 900
+		[Token(Token = "0x4000384")]
+		Etc
+	}
+
+	// Token: 0x02000094 RID: 148
+	[Token(Token = "0x2000094")]
+	public enum ItemEarnedBy
+	{
+		// Token: 0x04000386 RID: 902
+		[Token(Token = "0x4000386")]
+		Initial_Coin_for_New_Player,
+		// Token: 0x04000387 RID: 903
+		[Token(Token = "0x4000387")]
+		Timed_Replenish__x__While_Gone,
+		// Token: 0x04000388 RID: 904
+		[Token(Token = "0x4000388")]
+		Timed_Replenish__x__While_Playing,
+		// Token: 0x04000389 RID: 905
+		[Token(Token = "0x4000389")]
+		Free_Replenish__x__First_Time_No_More_Lives,
+		// Token: 0x0400038A RID: 906
+		[Token(Token = "0x400038A")]
+		Free_Lives_for_New_Player,
+		// Token: 0x0400038B RID: 907
+		[Token(Token = "0x400038B")]
+		Free_Replenish,
+		// Token: 0x0400038C RID: 908
+		[Token(Token = "0x400038C")]
+		Initial_Water_for_New_Player,
+		// Token: 0x0400038D RID: 909
+		[Token(Token = "0x400038D")]
+		Initial_Items_When_Unlocked,
+		// Token: 0x0400038E RID: 910
+		[Token(Token = "0x400038E")]
+		Initial_Star_Candy_for_New_Player,
+		// Token: 0x0400038F RID: 911
+		[Token(Token = "0x400038F")]
+		Level_Clear_Reward,
+		// Token: 0x04000390 RID: 912
+		[Token(Token = "0x4000390")]
+		Viral_Alien,
+		// Token: 0x04000391 RID: 913
+		[Token(Token = "0x4000391")]
+		Daily_Bonus_Level_Reward,
+		// Token: 0x04000392 RID: 914
+		[Token(Token = "0x4000392")]
+		Purchased_with_Real_Money,
+		// Token: 0x04000393 RID: 915
+		[Token(Token = "0x4000393")]
+		Purchased_with_Coins,
+		// Token: 0x04000394 RID: 916
+		[Token(Token = "0x4000394")]
+		Bonus_Level_Reward,
+		// Token: 0x04000395 RID: 917
+		[Token(Token = "0x4000395")]
+		Daily_Bonus,
+		// Token: 0x04000396 RID: 918
+		[Token(Token = "0x4000396")]
+		Daily_Bonus_Double_Watch_AD,
+		// Token: 0x04000397 RID: 919
+		[Token(Token = "0x4000397")]
+		Event_Reward,
+		// Token: 0x04000398 RID: 920
+		[Token(Token = "0x4000398")]
+		CS_Reward,
+		// Token: 0x04000399 RID: 921
+		[Token(Token = "0x4000399")]
+		Fanpange_Reward,
+		// Token: 0x0400039A RID: 922
+		[Token(Token = "0x400039A")]
+		Welcome_Back_Bonus,
+		// Token: 0x0400039B RID: 923
+		[Token(Token = "0x400039B")]
+		Become_a_Hero_Reward,
+		// Token: 0x0400039C RID: 924
+		[Token(Token = "0x400039C")]
+		Facebook_Login_Reward,
+		// Token: 0x0400039D RID: 925
+		[Token(Token = "0x400039D")]
+		Daily_Spin_Bonus,
+		// Token: 0x0400039E RID: 926
+		[Token(Token = "0x400039E")]
+		AD_Watching_Reward,
+		// Token: 0x0400039F RID: 927
+		[Token(Token = "0x400039F")]
+		Package_Product,
+		// Token: 0x040003A0 RID: 928
+		[Token(Token = "0x40003A0")]
+		Fast_Level_Achievement_Reward,
+		// Token: 0x040003A1 RID: 929
+		[Token(Token = "0x40003A1")]
+		Friends_Help,
+		// Token: 0x040003A2 RID: 930
+		[Token(Token = "0x40003A2")]
+		Hard_Level_Reward,
+		// Token: 0x040003A3 RID: 931
+		[Token(Token = "0x40003A3")]
+		Metagame__x__Tree_Reward,
+		// Token: 0x040003A4 RID: 932
+		[Token(Token = "0x40003A4")]
+		Rating_Reward,
+		// Token: 0x040003A5 RID: 933
+		[Token(Token = "0x40003A5")]
+		OneCoin,
+		// Token: 0x040003A6 RID: 934
+		[Token(Token = "0x40003A6")]
+		Step_Spin_Bonus,
+		// Token: 0x040003A7 RID: 935
+		[Token(Token = "0x40003A7")]
+		Reward_Life_Message,
+		// Token: 0x040003A8 RID: 936
+		[Token(Token = "0x40003A8")]
+		Guest_Bonus,
+		// Token: 0x040003A9 RID: 937
+		[Token(Token = "0x40003A9")]
+		Random_Box,
+		// Token: 0x040003AA RID: 938
+		[Token(Token = "0x40003AA")]
+		League,
+		// Token: 0x040003AB RID: 939
+		[Token(Token = "0x40003AB")]
+		Second_Level_Clear_Reward,
+		// Token: 0x040003AC RID: 940
+		[Token(Token = "0x40003AC")]
+		Quest_Reward,
+		// Token: 0x040003AD RID: 941
+		[Token(Token = "0x40003AD")]
+		Quest_All_Clear_Reward,
+		// Token: 0x040003AE RID: 942
+		[Token(Token = "0x40003AE")]
+		Step_Spin_Tutorial,
+		// Token: 0x040003AF RID: 943
+		[Token(Token = "0x40003AF")]
+		Other_Reward
+	}
+
+	// Token: 0x02000095 RID: 149
+	[Token(Token = "0x2000095")]
+	public enum StageClearPopupClosedAction
+	{
+		// Token: 0x040003B1 RID: 945
+		[Token(Token = "0x40003B1")]
+		None,
+		// Token: 0x040003B2 RID: 946
+		[Token(Token = "0x40003B2")]
+		Next,
+		// Token: 0x040003B3 RID: 947
+		[Token(Token = "0x40003B3")]
+		Invite,
+		// Token: 0x040003B4 RID: 948
+		[Token(Token = "0x40003B4")]
+		Close
+	}
+
+	// Token: 0x02000096 RID: 150
+	[Token(Token = "0x2000096")]
+	public enum LifeAccessedBy
+	{
+		// Token: 0x040003B6 RID: 950
+		[Token(Token = "0x40003B6")]
+		Life_Icon_from_Lobby,
+		// Token: 0x040003B7 RID: 951
+		[Token(Token = "0x40003B7")]
+		No_more_life_Automatic_Popup,
+		// Token: 0x040003B8 RID: 952
+		[Token(Token = "0x40003B8")]
+		Message_Center,
+		// Token: 0x040003B9 RID: 953
+		[Token(Token = "0x40003B9")]
+		Friends_Ranking_UI,
+		// Token: 0x040003BA RID: 954
+		[Token(Token = "0x40003BA")]
+		Etc
+	}
+
+	// Token: 0x02000097 RID: 151
+	[Token(Token = "0x2000097")]
+	public enum AdAccessedBy
+	{
+		// Token: 0x040003BC RID: 956
+		[Token(Token = "0x40003BC")]
+		Life_Icon_from_Lobby,
+		// Token: 0x040003BD RID: 957
+		[Token(Token = "0x40003BD")]
+		No_more_life_Popup,
+		// Token: 0x040003BE RID: 958
+		[Token(Token = "0x40003BE")]
+		No_more_life_Automatic_Popup,
+		// Token: 0x040003BF RID: 959
+		[Token(Token = "0x40003BF")]
+		BounsLevelBall_from_Lobby,
+		// Token: 0x040003C0 RID: 960
+		[Token(Token = "0x40003C0")]
+		BounsLevelBall_Automatic_Popup,
+		// Token: 0x040003C1 RID: 961
+		[Token(Token = "0x40003C1")]
+		Levelball_from_Lobby,
+		// Token: 0x040003C2 RID: 962
+		[Token(Token = "0x40003C2")]
+		GameStart_Automatic_Popup,
+		// Token: 0x040003C3 RID: 963
+		[Token(Token = "0x40003C3")]
+		Coin_Store_Popup,
+		// Token: 0x040003C4 RID: 964
+		[Token(Token = "0x40003C4")]
+		Coin_Store_Automatic_Popup,
+		// Token: 0x040003C5 RID: 965
+		[Token(Token = "0x40003C5")]
+		Coin_ADReward_Popup,
+		// Token: 0x040003C6 RID: 966
+		[Token(Token = "0x40003C6")]
+		AD_Booster_Icon_from_Ingame,
+		// Token: 0x040003C7 RID: 967
+		[Token(Token = "0x40003C7")]
+		AD_Package_Popup,
+		// Token: 0x040003C8 RID: 968
+		[Token(Token = "0x40003C8")]
+		AlienMessage,
+		// Token: 0x040003C9 RID: 969
+		[Token(Token = "0x40003C9")]
+		OneCoin_RewardAD_Retry_popup,
+		// Token: 0x040003CA RID: 970
+		[Token(Token = "0x40003CA")]
+		AD_Help_Popup,
+		// Token: 0x040003CB RID: 971
+		[Token(Token = "0x40003CB")]
+		Level_Result_Popup,
+		// Token: 0x040003CC RID: 972
+		[Token(Token = "0x40003CC")]
+		LevelReward_Popup,
+		// Token: 0x040003CD RID: 973
+		[Token(Token = "0x40003CD")]
+		Guest_GameStartPopup_RankingUI,
+		// Token: 0x040003CE RID: 974
+		[Token(Token = "0x40003CE")]
+		LifeMessage,
+		// Token: 0x040003CF RID: 975
+		[Token(Token = "0x40003CF")]
+		StepSpinPopup,
+		// Token: 0x040003D0 RID: 976
+		[Token(Token = "0x40003D0")]
+		StepSpinTutorialPopup,
+		// Token: 0x040003D1 RID: 977
+		[Token(Token = "0x40003D1")]
+		Level_Clear_Click_Next_Button,
+		// Token: 0x040003D2 RID: 978
+		[Token(Token = "0x40003D2")]
+		Etc
+	}
+
+	// Token: 0x02000098 RID: 152
+	[Token(Token = "0x2000098")]
+	public enum AdCompletedStepReached
+	{
+		// Token: 0x040003D4 RID: 980
+		[Token(Token = "0x40003D4")]
+		None,
+		// Token: 0x040003D5 RID: 981
+		[Token(Token = "0x40003D5")]
+		Popup_Opened,
+		// Token: 0x040003D6 RID: 982
+		[Token(Token = "0x40003D6")]
+		Clicked_ADWatching_Button,
+		// Token: 0x040003D7 RID: 983
+		[Token(Token = "0x40003D7")]
+		Completed
+	}
+
+	// Token: 0x02000099 RID: 153
+	[Token(Token = "0x2000099")]
+	public enum GetPermissionActionType
+	{
+		// Token: 0x040003D9 RID: 985
+		[Token(Token = "0x40003D9")]
+		Impression,
+		// Token: 0x040003DA RID: 986
+		[Token(Token = "0x40003DA")]
+		Response_Confirm,
+		// Token: 0x040003DB RID: 987
+		[Token(Token = "0x40003DB")]
+		Response_Later
+	}
+
+	// Token: 0x0200009A RID: 154
+	[Token(Token = "0x200009A")]
+	public enum GetPermissionAccessedBy
+	{
+		// Token: 0x040003DD RID: 989
+		[Token(Token = "0x40003DD")]
+		AcceptDialog,
+		// Token: 0x040003DE RID: 990
+		[Token(Token = "0x40003DE")]
+		AutomaticPopup,
+		// Token: 0x040003DF RID: 991
+		[Token(Token = "0x40003DF")]
+		InvitePopup,
+		// Token: 0x040003E0 RID: 992
+		[Token(Token = "0x40003E0")]
+		LeaderBoard_GameStart,
+		// Token: 0x040003E1 RID: 993
+		[Token(Token = "0x40003E1")]
+		LeaderBoard_GameEnd,
+		// Token: 0x040003E2 RID: 994
+		[Token(Token = "0x40003E2")]
+		LeaderBoard_LobbyIcon,
+		// Token: 0x040003E3 RID: 995
+		[Token(Token = "0x40003E3")]
+		GetHelp,
+		// Token: 0x040003E4 RID: 996
+		[Token(Token = "0x40003E4")]
+		AskForLives,
+		// Token: 0x040003E5 RID: 997
+		[Token(Token = "0x40003E5")]
+		MessageCenter,
+		// Token: 0x040003E6 RID: 998
+		[Token(Token = "0x40003E6")]
+		ETC
+	}
+
+	// Token: 0x0200009B RID: 155
+	[Token(Token = "0x200009B")]
+	public enum ItemType
+	{
+		// Token: 0x040003E8 RID: 1000
+		[Token(Token = "0x40003E8")]
+		NONE,
+		// Token: 0x040003E9 RID: 1001
+		[Token(Token = "0x40003E9")]
+		Move5,
+		// Token: 0x040003EA RID: 1002
+		[Token(Token = "0x40003EA")]
+		MagicHammer,
+		// Token: 0x040003EB RID: 1003
+		[Token(Token = "0x40003EB")]
+		CandyCrane,
+		// Token: 0x040003EC RID: 1004
+		[Token(Token = "0x40003EC")]
+		CandyPack
+	}
+
+	// Token: 0x0200009C RID: 156
+	[Token(Token = "0x200009C")]
+	public enum LevelPlayType
+	{
+		// Token: 0x040003EE RID: 1006
+		[Token(Token = "0x40003EE")]
+		Normal,
+		// Token: 0x040003EF RID: 1007
+		[Token(Token = "0x40003EF")]
+		Hard_Level,
+		// Token: 0x040003F0 RID: 1008
+		[Token(Token = "0x40003F0")]
+		Bonus_Level,
+		// Token: 0x040003F1 RID: 1009
+		[Token(Token = "0x40003F1")]
+		Friend_Help__y__Normal,
+		// Token: 0x040003F2 RID: 1010
+		[Token(Token = "0x40003F2")]
+		Friend_Help__y__Hard_Level,
+		// Token: 0x040003F3 RID: 1011
+		[Token(Token = "0x40003F3")]
+		One_Coin,
+		// Token: 0x040003F4 RID: 1012
+		[Token(Token = "0x40003F4")]
+		Etc,
+		// Token: 0x040003F5 RID: 1013
+		[Token(Token = "0x40003F5")]
+		Daily_Bonus_Level,
+		// Token: 0x040003F6 RID: 1014
+		[Token(Token = "0x40003F6")]
+		NULL,
+		// Token: 0x040003F7 RID: 1015
+		[Token(Token = "0x40003F7")]
+		Max
+	}
+
+	// Token: 0x0200009D RID: 157
+	[Token(Token = "0x200009D")]
+	public enum PlayerAction
+	{
+		// Token: 0x040003F9 RID: 1017
+		[Token(Token = "0x40003F9")]
+		Game_Over,
+		// Token: 0x040003FA RID: 1018
+		[Token(Token = "0x40003FA")]
+		Player_Did_Quit,
+		// Token: 0x040003FB RID: 1019
+		[Token(Token = "0x40003FB")]
+		Terminated_Unfinished
+	}
+
+	// Token: 0x0200009E RID: 158
+	[Token(Token = "0x200009E")]
+	public enum OfferCondition
+	{
+		// Token: 0x040003FD RID: 1021
+		[Token(Token = "0x40003FD")]
+		NULL,
+		// Token: 0x040003FE RID: 1022
+		[Token(Token = "0x40003FE")]
+		Right_after_First_Purchase,
+		// Token: 0x040003FF RID: 1023
+		[Token(Token = "0x40003FF")]
+		Need_Coins_for_Something,
+		// Token: 0x04000400 RID: 1024
+		[Token(Token = "0x4000400")]
+		Long_Time_No_Pay
+	}
+
+	// Token: 0x0200009F RID: 159
+	[Token(Token = "0x200009F")]
+	public enum PurchaseTypeOfPopup
+	{
+		// Token: 0x04000402 RID: 1026
+		[Token(Token = "0x4000402")]
+		Regual_Coin_Store,
+		// Token: 0x04000403 RID: 1027
+		[Token(Token = "0x4000403")]
+		Starter_Pack_Popup,
+		// Token: 0x04000404 RID: 1028
+		[Token(Token = "0x4000404")]
+		Cohort_Sale_Popup__x__2nd_Purchase,
+		// Token: 0x04000405 RID: 1029
+		[Token(Token = "0x4000405")]
+		Unlimited_Life_Pack,
+		// Token: 0x04000406 RID: 1030
+		[Token(Token = "0x4000406")]
+		Buyback_Pack,
+		// Token: 0x04000407 RID: 1031
+		[Token(Token = "0x4000407")]
+		Ingame_Item_Pack,
+		// Token: 0x04000408 RID: 1032
+		[Token(Token = "0x4000408")]
+		Push__x__1_More_Expensive_Proposal,
+		// Token: 0x04000409 RID: 1033
+		[Token(Token = "0x4000409")]
+		Push__x__1_More_Ingame_Item_Pack,
+		// Token: 0x0400040A RID: 1034
+		[Token(Token = "0x400040A")]
+		Push__x__1_Regular_Coin_Store,
+		// Token: 0x0400040B RID: 1035
+		[Token(Token = "0x400040B")]
+		Double_Coin_Store,
+		// Token: 0x0400040C RID: 1036
+		[Token(Token = "0x400040C")]
+		Step_Double_Coin_Store,
+		// Token: 0x0400040D RID: 1037
+		[Token(Token = "0x400040D")]
+		BoosterPackBomb,
+		// Token: 0x0400040E RID: 1038
+		[Token(Token = "0x400040E")]
+		BoosterPackHammer,
+		// Token: 0x0400040F RID: 1039
+		[Token(Token = "0x400040F")]
+		BoosterPackHBomb,
+		// Token: 0x04000410 RID: 1040
+		[Token(Token = "0x4000410")]
+		BoosterPackVBomb,
+		// Token: 0x04000411 RID: 1041
+		[Token(Token = "0x4000411")]
+		BoosterPackBomb2,
+		// Token: 0x04000412 RID: 1042
+		[Token(Token = "0x4000412")]
+		PeriodEventChristmasPack,
+		// Token: 0x04000413 RID: 1043
+		[Token(Token = "0x4000413")]
+		Others
+	}
+
+	// Token: 0x020000A0 RID: 160
+	[Token(Token = "0x20000A0")]
+	public enum PurchaseReachedStep
+	{
+		// Token: 0x04000415 RID: 1045
+		[Token(Token = "0x4000415")]
+		PopupOpened,
+		// Token: 0x04000416 RID: 1046
+		[Token(Token = "0x4000416")]
+		ClickedPurchaseButton,
+		// Token: 0x04000417 RID: 1047
+		[Token(Token = "0x4000417")]
+		Purchased
+	}
+
+	// Token: 0x020000A1 RID: 161
+	[Token(Token = "0x20000A1")]
+	public enum FreeMovePackPurchasedBy
+	{
+		// Token: 0x04000419 RID: 1049
+		[Token(Token = "0x4000419")]
+		Free__z_5_Moves_for_First_Time_Failure
+	}
+
+	// Token: 0x020000A2 RID: 162
+	[Token(Token = "0x20000A2")]
+	public enum InvitePopupAccessedBy
+	{
+		// Token: 0x0400041B RID: 1051
+		[Token(Token = "0x400041B")]
+		Automatic_Popup,
+		// Token: 0x0400041C RID: 1052
+		[Token(Token = "0x400041C")]
+		Life_Request_Popup,
+		// Token: 0x0400041D RID: 1053
+		[Token(Token = "0x400041D")]
+		Message_Center,
+		// Token: 0x0400041E RID: 1054
+		[Token(Token = "0x400041E")]
+		Ranking_UI,
+		// Token: 0x0400041F RID: 1055
+		[Token(Token = "0x400041F")]
+		Bonus_Level,
+		// Token: 0x04000420 RID: 1056
+		[Token(Token = "0x4000420")]
+		Chain_Letter,
+		// Token: 0x04000421 RID: 1057
+		[Token(Token = "0x4000421")]
+		Etc
+	}
+
+	// Token: 0x020000A3 RID: 163
+	[Token(Token = "0x20000A3")]
+	public enum InviteReachedStep
+	{
+		// Token: 0x04000423 RID: 1059
+		[Token(Token = "0x4000423")]
+		Popup_Opened,
+		// Token: 0x04000424 RID: 1060
+		[Token(Token = "0x4000424")]
+		Clicked_Invite_Button,
+		// Token: 0x04000425 RID: 1061
+		[Token(Token = "0x4000425")]
+		Completed
+	}
+
+	// Token: 0x020000A4 RID: 164
+	[Token(Token = "0x20000A4")]
+	public enum MetaGameAccessedBy
+	{
+		// Token: 0x04000427 RID: 1063
+		[Token(Token = "0x4000427")]
+		Lobby_Icon,
+		// Token: 0x04000428 RID: 1064
+		[Token(Token = "0x4000428")]
+		Automatic_Event
+	}
+
+	// Token: 0x020000A5 RID: 165
+	[Token(Token = "0x20000A5")]
+	public enum SpinCost
+	{
+		// Token: 0x0400042A RID: 1066
+		[Token(Token = "0x400042A")]
+		Free,
+		// Token: 0x0400042B RID: 1067
+		[Token(Token = "0x400042B")]
+		AD,
+		// Token: 0x0400042C RID: 1068
+		[Token(Token = "0x400042C")]
+		Coin,
+		// Token: 0x0400042D RID: 1069
+		[Token(Token = "0x400042D")]
+		Tutorial_AD,
+		// Token: 0x0400042E RID: 1070
+		[Token(Token = "0x400042E")]
+		ETC
+	}
+
+	// Token: 0x020000A6 RID: 166
+	[Token(Token = "0x20000A6")]
+	public enum LobbyButtonType
+	{
+		// Token: 0x04000430 RID: 1072
+		[Token(Token = "0x4000430")]
+		Buff,
+		// Token: 0x04000431 RID: 1073
+		[Token(Token = "0x4000431")]
+		Cross_Promotion,
+		// Token: 0x04000432 RID: 1074
+		[Token(Token = "0x4000432")]
+		One_Coin_Clear,
+		// Token: 0x04000433 RID: 1075
+		[Token(Token = "0x4000433")]
+		Daily_Bonus_Level,
+		// Token: 0x04000434 RID: 1076
+		[Token(Token = "0x4000434")]
+		Cohort_Pack,
+		// Token: 0x04000435 RID: 1077
+		[Token(Token = "0x4000435")]
+		Step_Spin,
+		// Token: 0x04000436 RID: 1078
+		[Token(Token = "0x4000436")]
+		Quest,
+		// Token: 0x04000437 RID: 1079
+		[Token(Token = "0x4000437")]
+		Sweet_Garden,
+		// Token: 0x04000438 RID: 1080
+		[Token(Token = "0x4000438")]
+		League,
+		// Token: 0x04000439 RID: 1081
+		[Token(Token = "0x4000439")]
+		Heart,
+		// Token: 0x0400043A RID: 1082
+		[Token(Token = "0x400043A")]
+		Coin,
+		// Token: 0x0400043B RID: 1083
+		[Token(Token = "0x400043B")]
+		Cookie_Point,
+		// Token: 0x0400043C RID: 1084
+		[Token(Token = "0x400043C")]
+		World_Map,
+		// Token: 0x0400043D RID: 1085
+		[Token(Token = "0x400043D")]
+		Ranking,
+		// Token: 0x0400043E RID: 1086
+		[Token(Token = "0x400043E")]
+		Message_Box,
+		// Token: 0x0400043F RID: 1087
+		[Token(Token = "0x400043F")]
+		ETC
+	}
+
+	// Token: 0x020000A7 RID: 167
+	[Token(Token = "0x20000A7")]
+	public enum ButtonLocation
+	{
+		// Token: 0x04000441 RID: 1089
+		[Token(Token = "0x4000441")]
+		Left,
+		// Token: 0x04000442 RID: 1090
+		[Token(Token = "0x4000442")]
+		Right,
+		// Token: 0x04000443 RID: 1091
+		[Token(Token = "0x4000443")]
+		Top,
+		// Token: 0x04000444 RID: 1092
+		[Token(Token = "0x4000444")]
+		Bottom,
+		// Token: 0x04000445 RID: 1093
+		[Token(Token = "0x4000445")]
+		Full_Screen,
+		// Token: 0x04000446 RID: 1094
+		[Token(Token = "0x4000446")]
+		ETC
+	}
+}
+"
